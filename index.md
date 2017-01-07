@@ -1,37 +1,48 @@
-## Welcome to GitHub Pages
+### ODU CS 432/532 for Spring 2017.
+Instructor: [Michael L. Nelson](http://www.cs.odu.edu/~mln/) <mln@cs.odu.edu> 
 
-You can use the [editor on GitHub](https://github.com/phonedude/cs532-s17/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Office Hours: Thursdays 3-4 and by appointment
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Time: Thursdays 5:45pm - 8:20pm
 
-### Markdown
+Place: E&CS bldg, r. 2120
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[Syllabus](https://raw.githubusercontent.com/phonedude/cs532-s17/master/syllabus.txt)
 
-```markdown
-Syntax highlighted code block
+### Recommended Books
+* [Learning Python](http://shop.oreilly.com/product/9780596158071.do)
+* [An Introduction to Search Engines and Web Navigation](http://www.wiley.com/WileyCDA/WileyTitle/productCd-047052684X.html)
+* [Networks, Crowds, and Markets: Reasoning About a Highly Connected World ](http://www.cs.cornell.edu/home/kleinber/networks-book/)
+* [Programming Collective Intelligence ](http://shop.oreilly.com/product/9780596529321.do)
 
-# Header 1
-## Header 2
-### Header 3
+### Class Email list
+* [https://groups.google.com/group/cs532-s16](https://groups.google.com/group/cs532-s17)
 
-- Bulleted
-- List
+### Class Schedule (subject to change)
+* Week 1 - January 12 - [Web Science, Web Architecture]
+* Week 2 - January 19 - [Introduction to Python]
+* Week 4 - February 2 - [Measuring and Archiving the Web]
+* Week 5 - February 9 - [Searching the Web]
+* Week 6 - February 16 - [Social Networks]
+* Week 7 - February 23 - [Selection and Social Influence]
+* Week 8 - March 2 - [Visualizing Social Networks]
+* Week 9 - March 9 - No Class -- Spring Break
+* Week 10 - March 16 - [Collective Intelligence and Recommender Systems]
+* Week 11 - March 23 - No Class
+* Week 12 - March 30 - [Clustering Algorithms]
+* Week 13 - April 6 - [Document Filtering]
+* Week 14 - April 13 - No Class
+* Week 15 - April 20 - [kNN and SVM] 
+* Week 16 - April 27 - Exam (No Class)
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/phonedude/cs532-s17/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Assignments (subject to change)
+* [A1 due 2016-01-26] 
+* [A2 due 2016-02-09] 
+* [A3 due 2016-02-16] 
+* [A4 due 2016-02-23] 
+* [A5 due 2016-03-01] 
+* [A6 due 2016-03-15] 
+* [A7 due 2016-03-29] 
+* [A8 due 2016-04-05] 
+* [A9 due 2016-04-19]
+* [A10 due 2016-04-28] 
