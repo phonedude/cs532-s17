@@ -16,7 +16,7 @@ Place: E&CS bldg, r. 2120
 * [Programming Collective Intelligence ](http://shop.oreilly.com/product/9780596529321.do)
 
 ### Class Email list
-* [https://groups.google.com/group/cs532-s16](https://groups.google.com/group/cs532-s17)
+* [https://groups.google.com/group/cs532-s17](https://groups.google.com/group/cs532-s17)
 
 ### Class Schedule (subject to change)
 * Week 1 - January 12 - [Web Science, Web Architecture]
