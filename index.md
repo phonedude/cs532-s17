@@ -1,7 +1,7 @@
 ### ODU CS 432/532 for Spring 2017.
 Instructor: [Michael L. Nelson](http://www.cs.odu.edu/~mln/) <mln@cs.odu.edu> 
 
-Office Hours: Thursdays 3-4 and by appointment
+Office Hours: Thursdays 3-5 and by appointment
 
 Time: Thursdays 5:45pm - 8:20pm
 
@@ -21,6 +21,7 @@ Place: E&CS bldg, r. 2120
 ### Class Schedule (subject to change)
 * Week 1 - January 12 - [Web Science, Web Architecture]
 * Week 2 - January 19 - [Introduction to Python]
+* Week 3 - January 26 - [Introduction to R] 
 * Week 4 - February 2 - [Measuring and Archiving the Web]
 * Week 5 - February 9 - [Searching the Web]
 * Week 6 - February 16 - [Social Networks]
