@@ -1,0 +1,94 @@
+CS 432/532: Introduction to Web Science 
+Spring 2017 
+CRNs 25728, 25729
+
+Instructor: Michael L. Nelson <mln@cs.odu.edu> 
+http://www.cs.odu.edu/~mln/ 
+
+Office Hours: Thursdays 3-5 and by appointment
+
+Time: Thursdays 5:45 - 8:20pm
+Place: E&CS bldg, r. 2120
+
+The Web has fundamentally changed how we learn, play, communicate, and
+work. Its influence has become so monumental that it has given birth to
+a new science: Web Science, or the science of decentralized information
+structures. Although Web Science is interdisciplinary by nature, this
+course will be focusing mainly on the computing aspects of the Web: how
+it works, how it is used, and how it can be analyzed. We will examine
+a number of topics including: web architecture, web characterization
+and analysis, web archiving, Web 2.0, social networks, collective
+intelligence, search engines, web mining, information diffusion on the
+web, and the Semantic Web.
+
+Prerequisites: Standing as an undergraduate senior, graduate student,
+or approval from the instructor.
+
+Attendance Policy: Attendance is required for class participation,
+presentation, and discussion.  Absences must cleared with the instructor
+prior to class.  Even if you miss a class, you are responsible for
+everything that is said, discussed, and presented during class.
+
+Grading: 
+
+Assignments:  10 @ 10 points each, details to be shared in class.
+
+CS 432:
+10 point scale with pluses and minuses:
+	100-92 = A
+	 91-90 = A- 
+	 89-88 = B+
+	 87-82 = B
+	 81-80 = B-
+	 etc.
+CS 532:
+10 point scale with pluses and minuses:
+	100-94 = A
+	 93-90 = A- 
+	 89-88 = B+
+	 87-84 = B
+	 83-80 = B-
+	 etc.
+
+Late assignments lose 3 points for every 24 hours they are late.
+
+Honor code:
+
+Please familiarize yourself with the Honor Pledge, Honor Code, and the
+definitions of "plagiarism" and "unauthorized collaboration":
+http://orgs.odu.edu/hc/
+
+Class Homepage: 
+
+https://github.com/phonedude/cs532-s17
+
+Class email list:
+
+http://groups.google.com/group/cs532-s17
+
+Textbooks: None required, but check the slides for a list 
+of recommended books.
+
+Check the class page and email list regularly for more information.
+
+Old Dominion University is committed to ensuring equal access to all
+qualified students with disabilities in accordance with the Americans
+with Disabilities Act. The Office of Educational Accessibility (OEA)
+is the campus office that works with students who have disabilities to
+provide and/or arrange reasonable accommodations.
+
+* If you experience a disability which will impact your ability to
+access any aspect of my class, please present me with an accommodation
+letter from OEA so that we can work together to ensure that appropriate
+accommodations are available to you.
+
+* If you feel that you will experience barriers to your ability to learn
+and/or testing in my class but do not have an accommodation letter,
+please consider scheduling an appointment with OEA to determine if
+academic accommodations are necessary.
+
+The Office of Educational Accessibility is located at
+1021 Student Success Center and their phone number is
+(757) 683-4655. Additional information is available at the OEA
+website: http://www.odu.edu/educationalaccessibility/
+
