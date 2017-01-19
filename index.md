@@ -20,7 +20,7 @@ Place: E&CS bldg, r. 2120
 
 ### Class Schedule (subject to change)
 * Week 1 - January 12 - [Web Science, Web Architecture](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-01-intro.ppt)
-* Week 2 - January 19 - [Introduction to Python]
+* Week 2 - January 19 - [Introduction to Python](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-02-python.pptx) [(pdf)](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-02-python.pdf) 
 * Week 3 - January 26 - [Introduction to R] 
 * Week 4 - February 2 - [Measuring and Archiving the Web]
 * Week 5 - February 9 - [Searching the Web]
