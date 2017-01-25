@@ -1,0 +1,47 @@
+
+root@ima-app:/var/www/Hussam# curl http://www.cs.odu.edu/~hhallak/532/A1/Q1/index.html
+<html>
+<body>
+
+<form action="welcome.php" method="post">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
+</form>
+
+</body>
+</html>
+
+root@ima-app:/var/www/Hussam# curl www.cs.odu.edu/~hhallak/532/A1/Q1/welcome.php        
+<html>
+<body>
+
+ Array
+(
+)
+
+</body>
+</html>
+
+root@ima-app:/var/www/Hussam# curl -X POST -F 'name=Hussam' -F 'email=me@hussam.us' http://www.cs.odu.edu/~hhallak/532/A1/Q1/welcome.php
+<html>
+<body>
+
+ Array
+(
+    [name] => Hussam
+    [email] => me@hussam.us
+)
+
+</body>
+</html> 
+
+
+root@ima-app:/var/www/Hussam# curl -X POST -o response.html -F 'name=Hussam' -F 'email=me@hussam.us' http://www.cs.odu.edu/~hhallak/532/A1/Q1/welcome.php
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   348    0    97  100   251    999   2586 --:--:-- --:--:-- --:--:--  3691
+root@ima-app:/var/www/Hussam# ls
+response.html
+root@ima-app:/var/www/Hussam# cp response.html /home/samba/response.html
+root@ima-app:/var/www/Hussam#

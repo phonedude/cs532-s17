@@ -1,0 +1,25 @@
+Hussam Hallak
+Old Dominion University
+Computer Science Dept
+CS532 Web Science Spring 2017
+Assignment #1
+Question #2
+
+
+Instructions:
+*************
+
+How to use the program:
+=======================
+Execute this command from the terminal:
+python extractPDF.py http://example.com
+
+Required Python version:
+========================
+2.7
+
+Required Libraries:
+===================
+urlib2
+bs4 (Beautifulsoup)
+re (regular expressions)
