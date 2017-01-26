@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.24)  25 JAN 2017 14:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.24)  26 JAN 2017 11:18
 entering extended mode
 **./CS532_A1_Report.tex
 (CS532_A1_Report.tex
@@ -224,56 +224,57 @@ Package pdftex.def Info: images/screen_shot.png used on input line 143.
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (Q2/extractPDF.py) [3] [4] [5] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 430--432
+Underfull \hbox (badness 10000) in paragraph at lines 432--434
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 439.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 441.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 439.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 441.
 
-Overfull \hbox (44.3655pt too wide) in paragraph at lines 448--450
+Overfull \hbox (44.3655pt too wide) in paragraph at lines 450--452
 \OT1/cmr/m/n/10.95 Consider the ``bow-tie'' graph in the Broder et al. pa-per (
 fig 9): http://www9.org/w9cdrom/160/160.html 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 453.
+(Font)              <10.95> on input line 455.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 453.
+(Font)              <8> on input line 455.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 453.
-[8] <images/bowtie.png, id=35, 722.7pt x 406.51875pt>
+(Font)              <6> on input line 455.
+<images/bowtie.png, id=31, 722.7pt x 406.51875pt>
 File: images/bowtie.png Graphic file (type png)
  <use images/bowtie.png>
-Package pdftex.def Info: images/bowtie.png used on input line 505.
+Package pdftex.def Info: images/bowtie.png used on input line 509.
 (pdftex.def)             Requested size: 361.3491pt x 203.25887pt.
 
-Overfull \hbox (20.16397pt too wide) in paragraph at lines 511--512
+[8]
+Overfull \hbox (20.16397pt too wide) in paragraph at lines 516--517
 []\OT1/cmr/m/n/10.95 Python For Be-gin-ners. Avail-able from World Wide Web:(ht
 tp://www.pythonforbeginners.com/). 
  []
 
 [9 <./images/bowtie.png>] (CS532_A1_Report.aux) ) 
 Here is how much of TeX's memory you used:
- 6070 strings out of 493333
- 91435 string characters out of 3139188
+ 6071 strings out of 493333
+ 91441 string characters out of 3139188
  418323 words of memory out of 3000000
- 9552 multiletter control sequences out of 15000+200000
+ 9553 multiletter control sequences out of 15000+200000
  8065 words of font info for 29 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,6n,51p,362b,2797s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,8n,51p,362b,2797s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
 t10.pfb>
-Output written on CS532_A1_Report.pdf (9 pages, 111050 bytes).
+Output written on CS532_A1_Report.pdf (9 pages, 110503 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
