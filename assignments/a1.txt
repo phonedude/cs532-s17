@@ -3,7 +3,7 @@ Spring 2017
 http://phonedude.github.io/cs532-s17/
 
 Assignment #1
-Due: 11:59pm Sept 26
+Due: 11:59pm January 26
 
 1.  Demonstrate that you know how to use "curl" well enough to
 correctly POST data to a form.  Show that the HTML response that
