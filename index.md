@@ -38,7 +38,8 @@ Place: E&CS bldg, r. 2120
 
 ### Assignments (subject to change)
 * [A1 due 2016-01-26](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a1.txt)
-* [A2 due 2016-02-09] 
+* [A2 due 2016-02-09](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a2.txt)
+* [A2 due 2016-02-09]  
 * [A3 due 2016-02-16] 
 * [A4 due 2016-02-23] 
 * [A5 due 2016-03-02] 
