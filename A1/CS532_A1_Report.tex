@@ -10,7 +10,12 @@
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 
-\lstset{frame=tb,
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+
+\lstset{
   language=Java,
   aboveskip=3mm,
   belowskip=3mm,
@@ -33,8 +38,7 @@
 \noindent
 \large\textbf{Assignment 1} \hfill \textbf{Hussam Hallak} \\
 \normalsize CS532, Web Science, Spring 2017\hfill CS Master's Student \\
-Computer Science Dept \hfill Prof: Dr. Nelson \\
-Old Dominion University \hfill Due Date: 01/26/17
+Old Dominion University, Computer Science Dept \hfill Prof: Dr. Nelson 
 
 \section*{Question 1:}
 Demonstrate that you know how to use ``curl'' well enough to correctly POST data to a form. Show that the HTML response that is returned is ``correct''. That is, the server should take the arguments you POSTed and build a response accordingly. Save the HTML response to a file and then view that file in a browser and take a screen shot.
@@ -46,66 +50,51 @@ Example:
 
 Let's print HTML form a page using ``curl''. This page ``index.html'' is created for test purpose. It makes it possible to post data using a web browser:
 
-\begin{lstlisting}[language=bash]
+\begin{lstlisting}[language=bash,label=Command:,caption=Command:]
 root@ima-app:/var/www/Hussam# curl http://www.cs.odu.edu/~hhallak/532/A1/Q1/index.html
-
 \end{lstlisting}
-Output:
-\begin{lstlisting}[language=html]
+\begin{lstlisting}[language=html,label=Output:,caption=Output: The content of index.html]
 <html>
 <body>
-
 <form action="welcome.php" method="post">
 Name: <input type="text" name="name"><br>
 E-mail: <input type="text" name="email"><br>
 <input type="submit">
 </form>
-
 </body>
 </html>
-
 \end{lstlisting}
 The page ``welcome.php'' expects data to be posted, name and email. Let's see what it looks like without data posted to it. The Superglobal array \$\_POST should be empty:
 
-\begin{lstlisting}[language=bash]
-root@ima-app:/var/www/Hussam# curl www.cs.odu.edu/~hhallak/532/A1/Q1/welcome.php   
-
+\begin{lstlisting}[language=bash,label=Command:,caption=Command:]
+root@ima-app:/var/www/Hussam# curl www.cs.odu.edu/~hhallak/532/A1/Q1/welcome.php  
 \end{lstlisting}
-Output:
-\begin{lstlisting}[language=html]     
+
+\begin{lstlisting}[language=html,label=Output:,caption=Output: The output of welcome.php]     
 <html>
 <body>
-
- Array
-(
-)
-
+ Array()
 </body>
 </html>
-
 \end{lstlisting}
 
 \textbf{Note:}
 The code we use to print out the elements of the Superglobal array \$\_POST is what we see if we open ``welcome.php'' in a code editor:
 
-\begin{lstlisting}[language=php]
+\begin{lstlisting}[language=php,label=welcome.php,caption=The content of welcome.php]
 <html>
 <body>
-<?php
-print_r ($_POST); 
-?>
+<?php print_r ($_POST); ?>
 </body>
 </html>
 \end{lstlisting}
 
 Now it's time to use ``curl'' command to post data to the page ``welcome.php'' and see how it works. The Superglobal array \$\_POST should contain our data that we posted:
 
-\begin{lstlisting}[language=bash] 
+\begin{lstlisting}[language=bash,label=Command:,caption=Command:] 
 root@ima-app:/var/www/Hussam# curl -X POST -F 'name=Hussam' -F 'email=me@hussam.us' http://www.cs.odu.edu/~hhallak/532/A1/Q1/welcome.php
-
 \end{lstlisting}
-Output:
-\begin{lstlisting}[language=html]
+\begin{lstlisting}[language=html,,label=Output:,caption=Output: The output of welcome.php]
 <html>
 <body>
  Array
@@ -115,19 +104,16 @@ Output:
 )
 </body>
 </html> 
-
 \end{lstlisting}
 
 Now let's save our response to a file. We can easily do that by adding ``-o'' option, and add the name of the file where we want to save the response, to our previous ``curl'' command:
 \textbf{Note:}
 If the option ``-O'' is used, that is UPPERCASE O, there is no need to add a file name after it; the response will be saved to a file with the same page name.
 
-\begin{lstlisting}[language=bash]
+\begin{lstlisting}[language=bash,label=Command:,caption=Command:]
 root@ima-app:/var/www/Hussam# curl -X POST -o response.html -F 'name=Hussam' -F 'email=me@hussam.us' http://www.cs.odu.edu/~hhallak/532/A1/Q1/welcome.php
-
 \end{lstlisting}
-Output:
-\begin{lstlisting} 
+\begin{lstlisting}[label=Output:,caption=Output:]
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   348    0    97  100   251    999   2586 --:--:-- --:--:-- --:--:--  3691
@@ -137,11 +123,9 @@ response.html
 We can clearly see that the response is saved to a file named ``response.html''.
 
 \begin{figure}[h]
-
 \caption{Screenshot of The file response.html opened in a web browser}
 \centering
-\includegraphics{screen_shot.png}
-
+\includegraphics[scale=0.76]{screen_shot.png}
 \end{figure}
 
 \subsection*{Included Files:}
@@ -169,7 +153,43 @@ Write a Python program that:
 http://www.cs.odu.edu/\textasciitilde mln/teaching/cs532-s17/test/pdfs.html
      
 \subsection*{Answer:} 
-\lstinputlisting[language=Python]{Q2/extractPDF.py}
+
+\begin{lstlisting}[language=python,label=Python-code,caption=The content of extractPDF.py]
+import sys
+from bs4 import *
+import urllib2
+import re
+if len(sys.argv) != 2:
+	print "Usage: Python extracrPDF.py <url>"
+	print "e.g: Python extracrPDF.py http://example.com/page.html"
+else:
+	url = sys.argv[1]
+	print "Entered URL:"
+	print url
+	html_page = urllib2.urlopen(url)
+	print "Final URL:"
+	print html_page.geturl()
+	print "*******************"
+	soup = BeautifulSoup(html_page, "html.parser")
+	links = []
+	for link in soup.findAll('a', attrs={'href': re.compile("^http://")}):
+		links.append(link.get('href'))
+	for link in links:
+		try:
+			r = urllib2.urlopen(link)
+			if r.headers['content-type'] == "application/pdf" and r.getcode() == 200:
+				print "Extracted link:"
+				print link
+				print "Extracted link final URL:"
+				print r.geturl()
+				print "Size: " + r.headers['Content-Length']
+				print "-------------------------------------"
+		except urllib2.HTTPError as e:
+			print "There is an error extracting PDF files in this link:"
+			print "Error Code:"
+			print e.code
+\end{lstlisting}
+
 
 \subsection*{Running the program:}
 The program takes a link as a command line argument. It follows all the redirects until it terminates with a "200 OK". Then it begins to extract all links to PDF files and prints the PDF link, the final destination for the link, and file size. 
@@ -187,13 +207,11 @@ http://www.cs.odu.edu/\textasciitilde hhallak/
 \newline
 \noindent
 This page: http://www.cs.odu.edu/\textasciitilde hhallak/ does not contain any links to PDF documents.
-\begin{lstlisting}[language=bash] 
+\begin{lstlisting}[language=bash,label=Command:,caption=Command:]
 root@ima-app:/var/www/Hussam# python extractPDF.py http://hussam.us
 \end{lstlisting}
 
-Output:
-
-\begin{lstlisting}[language=bash]
+\begin{lstlisting}[language=bash,label=Output,caption=Output:]
 Entered URL:
 http://hussam.us
 Final URL:
@@ -205,15 +223,11 @@ http://www.cs.odu.edu/~hhallak/
 \textbf{Required Test Case:}
 
 http://www.cs.odu.edu/\textasciitilde mln/teaching/cs532-s17/test/pdfs.html
-\begin{lstlisting}[language=bash]
-
+\begin{lstlisting}[language=bash,label=Command:,caption=Command:]
 root@ima-app:/var/www/Hussam# python extractPDF.py http://www.cs.odu.edu/~mln/teaching/cs532-s17/test/pdfs.html
-
 \end{lstlisting}
 
-Output:
-
-\begin{lstlisting}[language=bash]
+\begin{lstlisting}[language=bash,label=Output:,caption=Output:]
 Entered URL:
 http://www.cs.odu.edu/~mln/teaching/cs532-s17/test/pdfs.html
 Final URL:
@@ -285,7 +299,6 @@ Extracted link final URL:
 http://www.cs.odu.edu/~mln/pubs/jcdl-2015/jcdl-2015-dictionary.pdf
 Size: 2350603
 -------------------------------------
-
 \end{lstlisting}
 
 \noindent
@@ -293,14 +306,11 @@ Size: 2350603
 
 http://www.cs.odu.edu/\textasciitilde hhallak/pdfs/index.html
 
-\begin{lstlisting}[language=bash]
-
+\begin{lstlisting}[language=bash,label=Command:,caption=Command:]
 root@ima-app:/var/www/Hussam# python extractPDF.py http://www.cs.odu.edu/~hhallak/pdfs/index.html
-
 \end{lstlisting}
-Output:
-\begin{lstlisting}[language=bash]
 
+\begin{lstlisting}[language=bash,label=Output:,caption=Output:]
 Entered URL:
 http://www.cs.odu.edu/~hhallak/pdfs/index.html
 Final URL:
@@ -426,10 +436,10 @@ Extracted link final URL:
 http://www.cs.odu.edu/~hhallak/pdfs/ssl_programming.pdf
 Size: 52201
 -------------------------------------
-
 \end{lstlisting}
 \subsection*{Included Files:}
 extractPDF.py, README
+\ifx
 \newline
 
 \noindent
@@ -444,6 +454,8 @@ Required Python version
 \item
 Required Libraries 
 \end{itemize}
+
+\fi
 
 
 \section*{Question 3:}
