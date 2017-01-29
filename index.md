@@ -21,7 +21,7 @@ Place: E&CS bldg, r. 2120
 ### Class Schedule (subject to change)
 * Week 1 - January 12 - [Web Science, Web Architecture](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-01-intro.ppt)
 * Week 2 - January 19 - [Introduction to Python](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-02-python.pptx) [(pdf)](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-02-python.pdf) 
-* Week 3 - January 26 - [Introduction to R] 
+* Week 3 - January 26 - Introduction to R (slides from: [Scott Ainsworth](http://www.cs.odu.edu/~sainswor/Teaching/R), [Frank McCown](http://www.harding.edu/fmccown/r/), [Martin Klein](http://www.cs.odu.edu/~mklein/cs796/lecture/)) 
 * Week 4 - February 2 - [Measuring and Archiving the Web]
 * Week 5 - February 9 - [Searching the Web]
 * Week 6 - February 16 - [Social Networks]
@@ -38,7 +38,8 @@ Place: E&CS bldg, r. 2120
 
 ### Assignments (subject to change)
 * [A1 due 2016-01-26](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a1.txt)
-* [A2 due 2016-02-09] 
+* [A2 due 2016-02-09](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a2.txt)
+* [A2 due 2016-02-09]  
 * [A3 due 2016-02-16] 
 * [A4 due 2016-02-23] 
 * [A5 due 2016-03-02] 
