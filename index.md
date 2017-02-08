@@ -23,28 +23,27 @@ Place: E&CS bldg, r. 2120
 * Week 2 - January 19 - [Introduction to Python](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-02-python.pptx) [(pdf)](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-02-python.pdf) 
 * Week 3 - January 26 - Introduction to R (slides from: [Scott Ainsworth](http://www.cs.odu.edu/~sainswor/Teaching/R), [Frank McCown](http://www.harding.edu/fmccown/r/), [Martin Klein](http://www.cs.odu.edu/~mklein/cs796/lecture/)) 
 * Week 4 - February 2 - [Measuring and Archiving the Web](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-04-measure-archive.ppt)
-* Week 5 - February 9 - [Searching the Web]
-* Week 6 - February 16 - [Social Networks]
-* Week 7 - February 23 - [Selection and Social Influence]
-* Week 8 - March 2 - [Visualizing Social Networks]
+* Week 5 - February 9 - [Searching the Web](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-05-searching.ppt)
+* Week 6 - February 16 - No Class
+* Week 7 - February 23 - [Social Networks]
+* Week 8 - March 2 - [Selection and Social Influence]
 * Week 9 - March 9 - No Class -- Spring Break
-* Week 10 - March 16 - [Collective Intelligence and Recommender Systems]
-* Week 11 - March 23 - No Class
+* Week 10 - March 16 - [Visualizing Social Networks]
+* Week 11 - March 23 - [Collective Intelligence and Recommender Systems]
 * Week 12 - March 30 - [Clustering Algorithms]
 * Week 13 - April 6 - [Document Filtering]
 * Week 14 - April 13 - No Class
 * Week 15 - April 20 - [kNN and SVM] 
-* Week 16 - April 27 - Exam (No Class)
+* Week 16 - April 27 - Exam week (No Class)
 
 ### Assignments (subject to change)
 * [A1 due 2016-01-26](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a1.txt)
 * [A2 due 2016-02-09](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a2.txt)
-* [A2 due 2016-02-09]  
-* [A3 due 2016-02-16] 
-* [A4 due 2016-02-23] 
-* [A5 due 2016-03-02] 
-* [A6 due 2016-03-16] 
-* [A7 due 2016-03-30] 
-* [A8 due 2016-04-06] 
+* [A3 due 2016-02-23](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a3.txt) 
+* [A4 due 2016-03-02] 
+* [A5 due 2016-03-16] 
+* [A6 due 2016-03-23] 
+* [A7 due 2016-04-06] 
+* [A8 due 2016-04-13] 
 * [A9 due 2016-04-20]
 * [A10 due 2016-04-27] 
