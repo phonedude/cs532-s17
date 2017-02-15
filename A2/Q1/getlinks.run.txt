@@ -1,0 +1,6 @@
+root@ima-app:/var/www/Hussam# python getlinks.py cnn
+Discarded url: The url is not external: https://t.co/qE
+Discarded url: The url is not external: https://t
+root@ima-app:/var/www/Hussam# ls
+build  config.py  config.pyc  getlinks.py  links.txt  make_unique.py
+root@ima-app:/var/www/Hussam#
