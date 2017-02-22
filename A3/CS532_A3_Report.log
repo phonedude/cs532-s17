@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.24)  22 FEB 2017 15:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.24)  22 FEB 2017 16:00
 entering extended mode
 **./CS532_A3_Report.tex
 (CS532_A3_Report.tex
@@ -368,15 +368,6 @@ LaTeX Warning: Label `Command:' multiply defined.
 
 
 LaTeX Warning: Label `Command:' multiply defined.
-
-
-LaTeX Warning: Label `knuthwebsite' multiply defined.
-
-
-LaTeX Warning: Label `knuthwebsite' multiply defined.
-
-
-LaTeX Warning: Label `knuthwebsite' multiply defined.
 
 )
 \openout1 = `CS532_A3_Report.aux'.
@@ -991,10 +982,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 13276 strings out of 493333
- 237594 string characters out of 3139188
+ 13275 strings out of 493333
+ 237580 string characters out of 3139188
  510476 words of memory out of 3000000
- 16706 multiletter control sequences out of 15000+200000
+ 16705 multiletter control sequences out of 15000+200000
  7925 words of font info for 29 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,8n,93p,10398b,1577s stack positions out of 5000i,500n,10000p,200000b,50000s
