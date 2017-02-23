@@ -25,7 +25,7 @@ Place: E&CS bldg, r. 2120
 * Week 4 - February 2 - [Measuring and Archiving the Web](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-04-measure-archive.ppt)
 * Week 5 - February 9 - [Searching the Web](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-05-searching.ppt)
 * Week 6 - February 16 - No Class
-* Week 7 - February 23 - [Social Networks]
+* Week 7 - February 23 - [Social Networks](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-07-social-networks.ppt)
 * Week 8 - March 2 - [Selection and Social Influence]
 * Week 9 - March 9 - No Class -- Spring Break
 * Week 10 - March 16 - [Visualizing Social Networks]
@@ -40,7 +40,7 @@ Place: E&CS bldg, r. 2120
 * [A1 due 2016-01-26](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a1.txt)
 * [A2 due 2016-02-09](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a2.txt)
 * [A3 due 2016-02-23](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a3.txt) 
-* [A4 due 2016-03-02] 
+* [A4 due 2016-03-02](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a4.txt)  
 * [A5 due 2016-03-16] 
 * [A6 due 2016-03-23] 
 * [A7 due 2016-04-06] 
