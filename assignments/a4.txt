@@ -2,7 +2,7 @@ CS 432/532 Web Science
 Spring 2017
 http://phonedude.github.io/cs532-s17/
 
-Assignment #3
+Assignment #4
 Due: 11:59pm March 2
 
 The "friendship paradox" (http://en.wikipedia.org/wiki/Friendship_paradox)
@@ -53,9 +53,14 @@ Extra credit, 3 points:
 
 3.  Repeat question #1, but with your LinkedIn profile.
 
+Extra credit, 3 points:
+
+4.  Repeat question #1, but with your own facebook profile.  Explain
+in detail (code, screen shots, etc.) how you got the information.
+
 Extra credit, 1 point:
 
-4.  Repeat question #2, but change "followers" to "following"?  In
+5.  Repeat question #2, but change "followers" to "following"?  In
 other words, are the people I am following following more people?
 
 
