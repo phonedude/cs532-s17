@@ -2,7 +2,7 @@ CS 432/532 Web Science
 Spring 2017
 http://phonedude.github.io/cs532-s17/
 
-Assignment #5
+Assignment #6
 Due: 11:59pm March 23
 
 1.  D3 graphing (10 points)
@@ -14,6 +14,8 @@ other, so they would both have links to me and links to each other.
 
 To see if two users follow each other, see:
 https://dev.twitter.com/rest/reference/get/friendships/show
+and
+https://dev.twitter.com/rest/reference/get/users/lookup
 
 Attractiveness of the graph counts!  Nodes should be labeled (avatar
 images are even better), and edge types (follows, following) should
