@@ -29,7 +29,7 @@ Place: E&CS bldg, r. 2120
 * Week 8 - March 2 - [Selection and Social Influence](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-08-selection.ppt)
 * Week 9 - March 9 - No Class -- Spring Break
 * Week 10 - March 16 - [Visualizing Social Networks](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-10-visualization.ppt), [Cukier and Murray code + slides](https://github.com/alignedleft/strata-d3-tutorial), [Bostock tutorials](https://github.com/d3/d3/wiki/Tutorials)
-* Week 11 - March 23 - [Collective Intelligence and Recommender Systems](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-11-recommender.ppt)
+* Week 11 - March 23 - [Collective Intelligence and Recommender Systems](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-11-ci-recommender.ppt)
 * Week 12 - March 30 - [Clustering Algorithms]
 * Week 13 - April 6 - [Document Filtering]
 * Week 14 - April 13 - No Class
