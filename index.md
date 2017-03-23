@@ -43,7 +43,7 @@ Place: E&CS bldg, r. 2120
 * [A4 due 2016-03-02](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a4.txt)  
 * [A5 due 2016-03-16](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a5.txt) 
 * [A6 due 2016-03-23](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a6.txt)  
-* [A7 due 2016-04-06] 
+* [A7 due 2016-04-06](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a7.txt)  
 * [A8 due 2016-04-13] 
 * [A9 due 2016-04-20]
 * [A10 due 2016-04-27] 
