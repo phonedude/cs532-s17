@@ -3,7 +3,6 @@
 \usepackage{xparse}% http://ctan.org/pkg/xparse
 \NewDocumentCommand{\Log}{o}{%
   \IfNoValueTF{#1}{}{{}^{#1}\!}\log}%
-  
 \usepackage{fullpage} % changes the margin
 \usepackage{longtable}
 \usepackage{graphicx}
@@ -19,6 +18,8 @@
 \definecolor{mauve}{rgb}{0.58,0,0.82}
 \usepackage{float}
 \usepackage{caption}
+\usepackage{url}
+\usepackage{biblatex}
 \DeclareCaptionFont{white}{\color{white}}
 \DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
 \captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
@@ -69,7 +70,7 @@ http://stackoverflow.com/questions/6551446/can-i-run-html-files-directly-from-gi
 Be sure to include the URI(s) for your D3 graph in your report. 
 
 \subsection*{Answer:}
-I do not have a minimum of 50 followers on Twitter, however I have an old account and accumulated 42 followers, which is close enough, and it will also help me in the next step because it is taking days to extract data using Twitter API if I used ``phonedude\_mln''. I created a python script, getfollowers.py, that will get all followers of a Twitter user passed as a command line argument; in this case it is ``iHussam''. The program saves all usernames of the followers in a text file. The first username in the file is the user passed in the command line, ``iHussam''. The output file name has the format <username>FOLLOWERS.txt. In this case it is ``iHussamFOLLOWERS.txt''.
+I do not have a minimum of 50 followers on Twitter, however I have an old account and accumulated 42 followers, which is close enough, and it will also help me in the next step because it is taking days to extract data using Twitter API if I used ``phonedude\_mln''. I created a python script, getfollowers.py, that will get all followers of a Twitter user passed as a command line argument; in this case it is ``iHussam''. The program saves all usernames of the followers in a text file. The first username in the file is the user passed in the command line, ``iHussam''. The output file name has the format $<$username$>$FOLLOWERS.txt. In this case it is ``iHussamFOLLOWERS.txt''.
 
 \lstinputlisting[language=Python, breakatwhitespace=〈false), label=The content of getfollowers.py, caption= The content of getfollowers.py]{Q1/getfollowers.py}
 
@@ -121,7 +122,7 @@ faisalhakem
 EvaGregory
 \end{lstlisting}
 
-Next step is to find out who follows who among my followers. I wrote a python script that using Twitter API. The script file is named ``whofollowswho.py''. It takes a text file that has all usernames we want to find the friendship among them as command line parameter, and it generates two comma separated .csv files as output, one of which contains the nodes ``nodes.csv'', and the other contains the edges ``links.csv''. These two file will be the input files for ``index.html'' that will have the graph in D3. 
+Next step is to find out the friendship between all users saved in the output file from the previous script. I wrote a python script that uses Twitter API to do that. The script file is named ``whofollowswho.py''. It takes a text file that has all usernames we want to find the friendship among them as command line parameter, and it generates two comma separated .csv files as output, one of which contains the nodes ``nodes.csv'', and the other contains the edges ``links.csv''. These two file will be the input files for ``index.html'' that will have the graph in D3. 
 
 \lstinputlisting[language=Python, breakatwhitespace=〈false), label=The content of whofollowswho.py, caption= The content of whofollowswho.py]{Q1/whofollowswho.py}
 
@@ -133,6 +134,10 @@ After running the script ``whofollowswho.py'', we have all the data needed to ge
 
 \lstinputlisting[language=html, breakatwhitespace=〈false), label=The content of index.html, caption= The content of index.html]{Q1/index.html}
 
+This is a screen shot of the graph. To interact with the graph please visit:
+
+http://www.cs.odu.edu/~hhallak/532/A6/index.html
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{d3.png}
@@ -140,6 +145,6 @@ After running the script ``whofollowswho.py'', we have all the data needed to ge
 
 
 \subsection*{Included Files:}
-config.py, getfollowers.py, iHussamFOLLOWERS.txt
+config.py, getfollowers.py, iHussamFOLLOWERS.txt, whofollowswho.py, nodes.csv, links.csv, index.html, d3.png
 
 \end{document}

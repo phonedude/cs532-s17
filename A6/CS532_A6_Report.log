@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.24)  28 MAR 2017 14:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.24)  28 MAR 2017 16:30
 entering extended mode
 **./CS532_A6_Report.tex
 (CS532_A6_Report.tex
@@ -359,39 +359,10 @@ Package caption Info: longtable package is loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-)
-(CS532_A6_Report.aux)
-\openout1 = `CS532_A6_Report.aux'.
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.sty"
+Package: biblatex 2016/12/05 v3.7 programmable bibliographies (PK/JW/AB)
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count151
-\scratchdimen=\dimen156
-\scratchbox=\box51
-\nofMPsegments=\count152
-\nofMParguments=\count153
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count154
-\MPscratchDim=\dimen157
-\MPnumerator=\count155
-\makeMPintoPDFobject=\count156
-\everyMPtoPDFconversion=\toks23
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
 )
 
@@ -404,15 +375,10 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
+("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count151
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
@@ -426,6 +392,258 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
+("C:\Program Files\MiKTeX 2.9\tex\latex\logreq\logreq.sty"
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count152
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\logreq\logreq.def"
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xstring\xstring.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xstring\xstring.tex"
+\@xs@message=\write5
+\integerpart=\count153
+\decimalpart=\count154
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\c@tabx@nest=\count155
+\c@listtotal=\count156
+\c@listcount=\count157
+\c@liststart=\count158
+\c@liststop=\count159
+\c@citecount=\count160
+\c@citetotal=\count161
+\c@multicitecount=\count162
+\c@multicitetotal=\count163
+\c@instcount=\count164
+\c@maxnames=\count165
+\c@minnames=\count166
+\c@maxitems=\count167
+\c@minitems=\count168
+\c@citecounter=\count169
+\c@savedcitecounter=\count170
+\c@uniquelist=\count171
+\c@uniquename=\count172
+\c@refsection=\count173
+\c@refsegment=\count174
+\c@maxextratitle=\count175
+\c@maxextratitleyear=\count176
+\c@maxextrayear=\count177
+\c@maxextraalpha=\count178
+\c@abbrvpenalty=\count179
+\c@highnamepenalty=\count180
+\c@lownamepenalty=\count181
+\c@maxparens=\count182
+\c@parenlevel=\count183
+\blx@tempcnta=\count184
+\blx@tempcntb=\count185
+\blx@tempcntc=\count186
+\blx@maxsection=\count187
+\blx@maxsegment@0=\count188
+\blx@notetype=\count189
+\blx@parenlevel@text=\count190
+\blx@parenlevel@foot=\count191
+\blx@sectionciteorder@0=\count192
+\labelnumberwidth=\skip54
+\labelalphawidth=\skip55
+\biblabelsep=\skip56
+\bibitemsep=\skip57
+\bibnamesep=\skip58
+\bibinitsep=\skip59
+\bibparsep=\skip60
+\bibhang=\skip61
+\blx@bcfin=\read2
+\blx@bcfout=\write6
+\c@mincomprange=\count193
+\c@maxcomprange=\count194
+\c@mincompwidth=\count195
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-dm.def")
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count196
+\c@savedafterword=\count197
+\c@annotator=\count198
+\c@savedannotator=\count199
+\c@author=\count266
+\c@savedauthor=\count267
+\c@bookauthor=\count268
+\c@savedbookauthor=\count269
+\c@commentator=\count270
+\c@savedcommentator=\count271
+\c@editor=\count272
+\c@savededitor=\count273
+\c@editora=\count274
+\c@savededitora=\count275
+\c@editorb=\count276
+\c@savededitorb=\count277
+\c@editorc=\count278
+\c@savededitorc=\count279
+\c@foreword=\count280
+\c@savedforeword=\count281
+\c@holder=\count282
+\c@savedholder=\count283
+\c@introduction=\count284
+\c@savedintroduction=\count285
+\c@namea=\count286
+\c@savednamea=\count287
+\c@nameb=\count288
+\c@savednameb=\count289
+\c@namec=\count290
+\c@savednamec=\count291
+\c@translator=\count292
+\c@savedtranslator=\count293
+\c@shortauthor=\count294
+\c@savedshortauthor=\count295
+\c@shorteditor=\count296
+\c@savedshorteditor=\count297
+\c@labelname=\count298
+\c@savedlabelname=\count299
+\c@institution=\count300
+\c@savedinstitution=\count301
+\c@lista=\count302
+\c@savedlista=\count303
+\c@listb=\count304
+\c@savedlistb=\count305
+\c@listc=\count306
+\c@savedlistc=\count307
+\c@listd=\count308
+\c@savedlistd=\count309
+\c@liste=\count310
+\c@savedliste=\count311
+\c@listf=\count312
+\c@savedlistf=\count313
+\c@location=\count314
+\c@savedlocation=\count315
+\c@organization=\count316
+\c@savedorganization=\count317
+\c@origlocation=\count318
+\c@savedoriglocation=\count319
+\c@origpublisher=\count320
+\c@savedorigpublisher=\count321
+\c@publisher=\count322
+\c@savedpublisher=\count323
+\c@language=\count324
+\c@savedlanguage=\count325
+\c@pageref=\count326
+\c@savedpageref=\count327
+\shorthandwidth=\skip62
+\shortjournalwidth=\skip63
+\shortserieswidth=\skip64
+\shorttitlewidth=\skip65
+\shortauthorwidth=\skip66
+\shorteditorwidth=\skip67
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\blx-compat.def"
+File: blx-compat.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.def"
+File: biblatex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
+\c@textcitecount=\count328
+\c@textcitetotal=\count329
+\c@textcitemaxnames=\count330
+\c@biburlnumpenalty=\count331
+\c@biburlucpenalty=\count332
+\c@biburllcpenalty=\count333
+\c@smartand=\count334
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\numeric.bbx"
+File: numeric.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\bbx\standard.bbx"
+File: standard.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
+\c@bbx:relatedcount=\count335
+\c@bbx:relatedtotal=\count336
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\cbx\numeric.cbx"
+File: numeric.cbx 2016/12/05 v3.7 biblatex citation style (PK/JW/AB)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\biblatex.cfg"
+File: biblatex.cfg 
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\biblatex\lbx\english.lbx"
+File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
+)
+\@quotelevel=\count337
+\@quotereset=\count338
+
+(CS532_A6_Report.aux)
+\openout1 = `CS532_A6_Report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+
+("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count339
+\scratchdimen=\dimen156
+\scratchbox=\box51
+\nofMPsegments=\count340
+\nofMParguments=\count341
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count342
+\MPscratchDim=\dimen157
+\MPnumerator=\count343
+\makeMPintoPDFobject=\count344
+\everyMPtoPDFconversion=\toks23
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
@@ -433,7 +651,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count157
+\c@lstlisting=\count345
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -471,23 +689,33 @@ G,.JBIG2,.JB2,.eps]
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: No input encoding detected.
+(biblatex)             Assuming 'ascii'.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'ascii'.
+\openout6 = `CS532_A6_Report.bcf'.
 
-Overfull \hbox (3.93654pt too wide) in paragraph at lines 67--68
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'CS532_A6_Report.bbl' not found.
+No file CS532_A6_Report.bbl.
+Package biblatex Info: Reference section=0 on input line 45.
+Package biblatex Info: Reference segment=0 on input line 45.
+
+Overfull \hbox (3.93654pt too wide) in paragraph at lines 68--69
 []\OT1/cmr/m/n/10.95 http://stackoverflow.com/questions/6551446/can-i-run-html-
 files-directly-from-github-
  []
 
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 73.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 73.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 73.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 74.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 74.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 74.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 74--74
+Overfull \hbox (6.0pt too wide) in paragraph at lines 75--75
 [][][][][][][] 
  []
 
@@ -500,17 +728,17 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-Overfull \hbox (6.0pt too wide) in paragraph at lines 76--76
+Overfull \hbox (6.0pt too wide) in paragraph at lines 77--77
 [][][][][][][] 
  []
 
 [2]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 126--126
+Overfull \hbox (6.0pt too wide) in paragraph at lines 127--127
 [][][][][][][] 
  []
 
 (Q1/whofollowswho.py) [3]
-Overfull \hbox (6.0pt too wide) in paragraph at lines 128--128
+Overfull \hbox (6.0pt too wide) in paragraph at lines 129--129
 [][][][][][][] 
  []
 
@@ -520,37 +748,47 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-Overfull \hbox (6.0pt too wide) in paragraph at lines 134--134
+Overfull \hbox (6.0pt too wide) in paragraph at lines 135--135
 [][][][][][][] 
  []
 
-(Q1/index.html [4] [5] [6]) <images/d3.png, id=23, 865.73438pt x 557.83406pt>
+(Q1/index.html [4] [5] [6]) <images/d3.png, id=24, 865.73438pt x 557.83406pt>
 File: images/d3.png Graphic file (type png)
 
 <use images/d3.png>
-Package pdftex.def Info: images/d3.png used on input line 138.
+Package pdftex.def Info: images/d3.png used on input line 143.
 (pdftex.def)             Requested size: 432.86613pt x 278.91634pt.
 
-Overfull \hbox (6.07478pt too wide) in paragraph at lines 138--139
+Overfull \hbox (6.07478pt too wide) in paragraph at lines 143--144
  [][] 
  []
 
-[7 <./images/d3.png>] (CS532_A6_Report.aux) ) 
+
+Overfull \hbox (14.31166pt too wide) in paragraph at lines 148--149
+\OT1/cmr/m/n/10.95 config.py, get-fol-low-ers.py, iHus-sam-FOL-LOW-ERS.txt, who
+-fol-lowswho.py, nodes.csv, links.csv,
+ []
+
+[7 <./images/d3.png>] (CS532_A6_Report.aux)
+Package logreq Info: Writing requests to 'CS532_A6_Report.run.xml'.
+\openout1 = `CS532_A6_Report.run.xml'.
+
+ ) 
 Here is how much of TeX's memory you used:
- 13409 strings out of 493333
- 239077 string characters out of 3139188
- 430182 words of memory out of 3000000
- 16826 multiletter control sequences out of 15000+200000
+ 19532 strings out of 493333
+ 350779 string characters out of 3139188
+ 878031 words of memory out of 3000000
+ 22894 multiletter control sequences out of 15000+200000
  7757 words of font info for 28 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,7n,93p,10398b,1773s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmtt10.pfb>
-Output written on CS532_A6_Report.pdf (7 pages, 216700 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on CS532_A6_Report.pdf (7 pages, 224212 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
+ 43 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
