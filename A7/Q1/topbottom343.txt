@@ -1,0 +1,42 @@
+First User id: 182
+******************
+Top 3 films:
+--------------
+Star Wars (1977)
+Hunchback of Notre Dame, The (1996)
+12 Angry Men (1957)
+--------------------------------------------
+Bottom 3 films:
+-----------------
+Emma (1996)
+That Thing You Do! (1996)
+Donnie Brasco (1997)
+*****************************************************
+Second User id: 215
+******************
+Top 3 films:
+--------------
+Silence of the Lambs, The (1991)
+Wizard of Oz, The (1939)
+Searching for Bobby Fischer (1993)
+--------------------------------------------
+Bottom 3 films:
+-----------------
+Unbearable Lightness of Being, The (1988)
+Seven (Se7en) (1995)
+Star Trek V: The Final Frontier (1989)
+*****************************************************
+Third User id: 633
+******************
+Top 3 films:
+--------------
+Die Hard 2 (1990)
+Basic Instinct (1992)
+Fugitive, The (1993)
+--------------------------------------------
+Bottom 3 films:
+-----------------
+Ghost and the Darkness, The (1996)
+Feeling Minnesota (1996)
+Scream (1996)
+*****************************************************
