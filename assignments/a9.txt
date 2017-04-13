@@ -1,0 +1,90 @@
+CS 432/532 Web Science
+Spring 2017
+http://phonedude.github.io/cs532-s17/
+
+Assignment #9
+Due: 11:59pm May 1 2017
+
+Support your answer: include all relevant discussion, assumptions,
+examples, etc.
+
+1.  Choose a blog or a newsfeed (or something similar with an Atom
+or RSS feed).  Every student should do a unique feed, so please
+"claim" the feed on the class email list (first come, first served).
+It should be on a topic or topics of which you are qualified to
+provide classification training data.  Find something with at least
+100 entries (or items if RSS).
+
+Create between four and eight different categories for the entries
+in the feed:
+
+examples: 
+
+work, class, family, news, deals
+
+liberal, conservative, moderate, libertarian
+
+sports, local, financial, national, international, entertainment
+
+metal, electronic, ambient, folk, hip-hop, pop
+
+Download and process the pages of the feed as per the week 12 
+class slides.
+
+Be sure to upload the raw data (Atom or RSS) to your github account.
+
+Create a table with 100 rows, like:
+
+title			classification
+-----			--------------
+Ric Ocasek -		80s 
+"Something To Grab 
+For" (forgotten song)	
+
+Weezer - "Pinkerton" 	alternative
+(LP Review)
+
+Schon & Hammer - 	80s
+"No More Lies" 
+(forgotten song)
+
+etc.  This is your "ground truth" (or "gold standard") data.
+
+2.  Train the Fisher classifier on the first 50 entries (the "training
+set"), then use the classifier to guess the classification of the
+next 50 entries (the "test set").
+
+Create a table with 50 rows, like
+
+title			actual		predicted
+-----			------		---------
+Donnie Iris - 		80s		80s
+"Ah! Leah!" 
+(Forgotten Song)	
+
+Black Sabbath - 	metal		metal
+"Vol. 4" (LP Review)
+
+Catherine Wheel - 	alternative	metal
+"Ferment" (LP Review)
+
+Assess the performance of your classifier in each of your categories
+by computing precision, recall, and F-measure.  Use the "macro-averaged"
+label based method, as per:
+
+http://stats.stackexchange.com/questions/21551/how-to-compute-precision-recall-for-multiclass-multilabel-classification
+
+For example, if you have 5 categories (e.g., 80s, metal,
+alternative, electronic, cover), you will compute 
+precision, recall, and F-measure for each category,
+and then compute the average across the 5 categories.
+
+3.  Repeat question #2, but use the first 90 entries to train your
+classifier and the last 10 entries for testing.
+
+===================================================================
+========The questions below is for 5 points extra credit===========
+===================================================================
+
+4.  Rerun question 3, but with "10-fold cross validation".  What
+was the change, if any, in precision and recall (and thus F-Measure)?
