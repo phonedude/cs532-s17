@@ -32,7 +32,7 @@ Place: E&CS bldg, r. 2120
 * Week 11 - March 23 - [Collective Intelligence and Recommender Systems](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-11-ci-recommender.ppt)
 * Week 12 - March 30 - [Clustering Algorithms](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-12-clustering.ppt)
 * Week 13 - April 6 - No Class 
-* Week 14 - April 13 - [Document Filtering]
+* Week 14 - April 13 - [Document Filtering](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-14-document-filtering.ppt)
 * Week 15 - April 20 - [kNN and SVM] 
 * Week 16 - April 27 - Exam week (No Class)
 
@@ -45,5 +45,5 @@ Place: E&CS bldg, r. 2120
 * [A6 due 2016-03-23](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a6.txt)  
 * [A7 due 2016-04-06](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a7.txt)  
 * [A8 due 2016-04-13](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a8.txt)  
-* [A9 due 2016-04-20]
+* [A9 due 2016-04-20](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a9.txt) 
 * [A10 due 2016-04-27] 
