@@ -33,7 +33,7 @@ Place: E&CS bldg, r. 2120
 * Week 12 - March 30 - [Clustering Algorithms](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-12-clustering.ppt)
 * Week 13 - April 6 - No Class 
 * Week 14 - April 13 - [Document Filtering](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-14-document-filtering.ppt)
-* Week 15 - April 20 - [kNN and SVM] 
+* Week 15 - April 20 - [kNN and SVM](https://raw.githubusercontent.com/phonedude/cs532-s17/master/slides/week-15-knn-svm.ppt) 
 * Week 16 - April 27 - Exam week (No Class)
 
 ### Assignments (subject to change)
@@ -46,4 +46,4 @@ Place: E&CS bldg, r. 2120
 * [A7 due 2016-04-06](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a7.txt)  
 * [A8 due 2016-04-13](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a8.txt)  
 * [A9 due 2016-04-20](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a9.txt) 
-* [A10 due 2016-04-27] 
+* [A10 due 2016-04-27](https://raw.githubusercontent.com/phonedude/cs532-s17/master/assignments/a10.txt)  
