@@ -1,0 +1,51 @@
+Title|Actual|Predicted
+Types - External Style Sheet|Tutorials|Tutorials
+Types - User Defined|Tutorials|Tutorials
+Internal Styles - Identifiers|Tutorials|Tutorials
+Internal Styles - Universal|Tutorials|Tutorials
+CSS Style Types $>>$ Topic-01|Tutorials|Tutorials
+Rule with CSS|Articles|Tutorials
+HTML Anchor Tag|Tutorials|Tutorials
+HTML >> acronym/abbreviation|Articles|Tutorials
+HTML Phrase Tags|Tutorials|Tutorials
+Html >> Canvas|Tutorials|Tutorials
+Html >> Lists with HTML Bullets - (PART_53)|Tutorials|Tutorials
+Html >> Subscript/Superscript - (PART_52)|Tutorials|Tutorials
+Html >> Image tags - HTML form with submit button as image  - (PART_51)|Tutorials|Tutorials
+Html >> Image tags- MAP/Image Mapping - (PART_50)|Tutorials|Tutorials
+HTML >> DTD - Document Type Definition - (PART_49)|Tutorials|Tutorials
+Htm >> HTML Tooltip  - (PART_48)|Tutorials|Tutorials
+Html >> HTML Fieldset and Legend Tags  - (PART_47)|Tutorials|Tutorials
+Html >> Frame tags >>Frames and Frameset Tag - (PART_46)|Tutorials|Tutorials
+Html >> Meta Tag - (PART\_45)|Tutorials|Tutorials
+Html >> Media >>Embedding Video to HTML File - (PART_44)|Tutorials|Tutorials
+Html >> Media >>Embedding Audio/Sound in background - (PART_43)|Tutorials|Tutorials
+Html >> CSS an Intro - (PART_42)|Tutorials|Tutorials
+Html >> Address Bar Icon in HTML page - (PART_41)|Tutorials|Tutorials
+Html >> IFrame  tag - (PART\_40)|Tutorials|Tutorials
+Html >> Auto refresh / Reload web page - (PART_39)|Tutorials|Tutorials
+Html >> Web Page Auto Redirection - (PART_38)|Tutorials|Tutorials
+Special/ASCII Characters in HTML - (PART_37)|Tutorials|Tutorials
+Forms >> Html Label  - (PART_36)|Tutorials|Tutorials
+Forms >> Html Password Field - (PART_35)|Tutorials|Tutorials
+Forms >> Combo Box / Dropdown  - (PART_34)|Tutorials|Tutorials
+Forms >> HTML TextArea Tag  - (PART_33)|Tutorials|Tutorials
+Forms >> HTML Check Box Tag  - (PART_32)|Tutorials|Tutorials
+Forms >> HTML Radio Button Tag  - (PART_31)|Tutorials|Tutorials
+Forms >> HTML Button Tag - (PART_30)|Tutorials|Tutorials
+Forms >> HTML Text Field Code - (PART_29)|Tutorials|Tutorials
+Forms>>  HTML Form Basic Types  - (PART_28)|Tutorials|Tutorials
+Using Tables >> Table Row Span  - (PART_27)|Tutorials|Tutorials
+Using Tables >> Table Col Span - (PART_26)|Tutorials|Tutorials
+Using Tables >> Inner Tables - (PART_25)|Tutorials|Tutorials
+Using Tables Table Alignment Code- (PART_24)|Tutorials|Tutorials
+Using Tables >> HTML Table Size - code  - (PART_23)|Tutorials|Tutorials
+Using Tables >> Table Background Color and Image - (PART_22)|Tutorials|Tutorials
+Using Tables >> HTML Table Border - (PART_21)|Tutorials|Tutorials
+Using Tables >> Creating HTML Table - (PART_20)|Tutorials|Tutorials
+Special Effects >> Special Effects - Blinking Text Tag- (PART_19)|Tutorials|Tutorials
+Special Effects >> Special Effects - Marquee Tag- (PART_18)|Tutorials|Tutorials
+Special Effects >> Special Effects - Marquee Tag -(PART_17)|Tutorials|Tutorials
+LINKS >> Mail Link Code -(PART_16)|Tutorials|Tutorials
+LINKS >> LINK Handling Code  -(PART_15)|Tutorials|Tutorials
+LINKS >> HTML LINKS Tag  -(PART_14)|Tutorials|Tutorials
