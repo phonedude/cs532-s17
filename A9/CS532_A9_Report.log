@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.24)  4 MAY 2017 11:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.24)  8 MAY 2017 10:20
 entering extended mode
 **./CS532_A9_Report.tex
 (CS532_A9_Report.tex
@@ -642,43 +642,43 @@ Underfull \vbox (badness 10000) detected at line 1099
  []
 
 
-Overfull \hbox (6.0pt too wide) in paragraph at lines 1101--1101
+Overfull \hbox (6.0pt too wide) in paragraph at lines 1103--1103
 [][][][][][][] 
  []
 
 
-Underfull \hbox (badness 3930) in paragraph at lines 1146--1147
+Underfull \hbox (badness 3930) in paragraph at lines 1148--1149
 []|\OT1/cmr/m/n/10.95 Special Ef-fects $\OML/cmm/m/it/10.95 >>$ \OT1/cmr/m/n/10
 .95 Spe-cial Ef-fects - Mar-quee Tag-
  []
 
 
-Underfull \hbox (badness 2027) in paragraph at lines 1152--1153
+Underfull \hbox (badness 2027) in paragraph at lines 1154--1155
 []|\OT1/cmr/m/n/10.95 Special Ef-fects $\OML/cmm/m/it/10.95 >>$ \OT1/cmr/m/n/10
 .95 Spe-cial Ef-fects - Mar-quee Tag -
  []
 
 
-Overfull \hbox (9.14719pt too wide) in alignment at lines 1108--1176
+Overfull \hbox (9.14719pt too wide) in alignment at lines 1110--1178
  [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1176
+Underfull \vbox (badness 10000) detected at line 1178
  []
 
 [12]
-Overfull \hbox (1.13406pt too wide) in paragraph at lines 1182--1183
+Overfull \hbox (1.13406pt too wide) in paragraph at lines 1184--1185
 []|\OT1/cmr/m/n/10.95 TP| 
  []
 
 
-Overfull \hbox (1.13408pt too wide) in paragraph at lines 1186--1187
+Overfull \hbox (1.13408pt too wide) in paragraph at lines 1188--1189
 []|\OT1/cmr/m/n/10.95 FN| 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1250
+Underfull \vbox (badness 10000) detected at line 1252
  []
 
 [13] (CS532_A9_Report.aux)
@@ -701,7 +701,7 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmtt10.pfb>
-Output written on CS532_A9_Report.pdf (13 pages, 192649 bytes).
+Output written on CS532_A9_Report.pdf (13 pages, 192917 bytes).
 PDF statistics:
  75 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
