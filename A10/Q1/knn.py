@@ -1,6 +1,7 @@
 import sys
+import math
 from scipy import spatial
-
+ 
 def readfile(filename):
 	lines = [line for line in open(filename)]
 	colnames = lines[0].strip().split('\t')[1:]
@@ -12,8 +13,8 @@ def readfile(filename):
 		data.append([float(x) for x in p[1:]])
 	return (rownames, colnames, data)
 
-def cosine(v1,v2):
-	return spatial.distance.cosine(v1,v2)
+def cosine(v1, v2):
+	return spatial.distance.cosine(v1, v2)
 
 def getdistances(data,vec1):
 	distancelist=[]
@@ -26,8 +27,7 @@ def getdistances(data,vec1):
 def knnestimate(blogs, data,vec1,k):
 	dlist=getdistances(data,vec1)
 	for i in range(k):
-		print str(dlist[i][0])
-		print str(blogs[dlist[i][1]])
+		print i+1, '. ', blogs[dlist[i][1]], ': ', dlist[i][0]
 	return dlist
 
 def main():

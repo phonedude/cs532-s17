@@ -1,0 +1,101 @@
+F-Measure
+==============
+For K =  1  :
+******************
+1 .  music of the moment :  0.77468595644
+For K =  2  :
+******************
+1 .  music of the moment :  0.77468595644
+2 .  Floorshime Zipper Boots :  0.781375062422
+For K =  5  :
+******************
+1 .  music of the moment :  0.77468595644
+2 .  Floorshime Zipper Boots :  0.781375062422
+3 .  She May Be Naked :  0.791026707141
+4 .  Pithy Title Here :  0.813625170897
+5 .  Cuz Music Rocks :  0.836821512034
+For K =  10  :
+******************
+1 .  music of the moment :  0.77468595644
+2 .  Floorshime Zipper Boots :  0.781375062422
+3 .  She May Be Naked :  0.791026707141
+4 .  Pithy Title Here :  0.813625170897
+5 .  Cuz Music Rocks :  0.836821512034
+6 .  Web Science and Digital Libraries Research Group :  0.851859829515
+7 .  Playing Favorites :  0.855704178927
+8 .  Stephanie Veto Photography :  0.855861237123
+9 .  Steel City Rust :  0.858130158188
+10 .  Bonjour Girl :  0.861324950944
+For K =  20  :
+******************
+1 .  music of the moment :  0.77468595644
+2 .  Floorshime Zipper Boots :  0.781375062422
+3 .  She May Be Naked :  0.791026707141
+4 .  Pithy Title Here :  0.813625170897
+5 .  Cuz Music Rocks :  0.836821512034
+6 .  Web Science and Digital Libraries Research Group :  0.851859829515
+7 .  Playing Favorites :  0.855704178927
+8 .  Stephanie Veto Photography :  0.855861237123
+9 .  Steel City Rust :  0.858130158188
+10 .  Bonjour Girl :  0.861324950944
+11 .  Pirate's Log :  0.862401864906
+12 .  jaaackie. :  0.870612757625
+13 .  a duchess nonethelesss :  0.874878174209
+14 .  Spinitron Charts :  0.893449051029
+15 .  DaveCromwell Writes :  0.897499681747
+16 .  Stories From the City, Stories From the Sea :  0.900109513716
+17 .  Did Not Chart :  0.904191943265
+18 .  IoTube     :) :  0.906238553812
+19 .  Music-Drop Magazine :  0.906384561863
+20 .  MarkEOrtega's Journalism Portfolio :  0.906840082631
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Web Science and Digital Libraries Research Group
+==============
+For K =  1  :
+******************
+1 .  She May Be Naked :  0.773789658939
+For K =  2  :
+******************
+1 .  She May Be Naked :  0.773789658939
+2 .  a duchess nonethelesss :  0.781415962198
+For K =  5  :
+******************
+1 .  She May Be Naked :  0.773789658939
+2 .  a duchess nonethelesss :  0.781415962198
+3 .  jaaackie. :  0.788127039725
+4 .  Stephanie Veto Photography :  0.791060931843
+5 .  Pirate's Log :  0.797067144815
+For K =  10  :
+******************
+1 .  She May Be Naked :  0.773789658939
+2 .  a duchess nonethelesss :  0.781415962198
+3 .  jaaackie. :  0.788127039725
+4 .  Stephanie Veto Photography :  0.791060931843
+5 .  Pirate's Log :  0.797067144815
+6 .  Steel City Rust :  0.809397458336
+7 .  Pithy Title Here :  0.813947898116
+8 .  Floorshime Zipper Boots :  0.826084927115
+9 .  Stonehill Sketchbook :  0.831709541798
+10 .  Did Not Chart :  0.839871846195
+For K =  20  :
+******************
+1 .  She May Be Naked :  0.773789658939
+2 .  a duchess nonethelesss :  0.781415962198
+3 .  jaaackie. :  0.788127039725
+4 .  Stephanie Veto Photography :  0.791060931843
+5 .  Pirate's Log :  0.797067144815
+6 .  Steel City Rust :  0.809397458336
+7 .  Pithy Title Here :  0.813947898116
+8 .  Floorshime Zipper Boots :  0.826084927115
+9 .  Stonehill Sketchbook :  0.831709541798
+10 .  Did Not Chart :  0.839871846195
+11 .  The Great Adventure 2016 :  0.845811331102
+12 .  Eli Jace | The Mind Is A Terrible Thing To Paste :  0.850558351687
+13 .  nonsense a la mode :  0.857965189424
+14 .  DaveCromwell Writes :  0.868706671357
+15 .  MarkEOrtega's Journalism Portfolio :  0.871719034509
+16 .  music of the moment :  0.877015300416
+17 .  @65 Sounding Booth :  0.879863520273
+18 .  MTJR RANTS & RAVES ON MUSIC :  0.887927965465
+19 .  MAGGOT CAVIAR :  0.888088609794
+20 .  holaOLA :  0.899028245979
