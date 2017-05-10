@@ -1,0 +1,1 @@
+[u'[if gte IE 9]>\n    <style type="text/css">.gradient {filter: none;}</style>\n    <![endif]', u'[if lt IE 9]>\n    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>\n    <![endif]', u"He met dozens of kids who didn't have shoes. So he invented 5 pairs in 1.", u'Advertisement']
