@@ -1,0 +1,798 @@
+\documentclass[a4paper, 11pt]{article}
+\usepackage{comment} % enables the use of multi-line comments (\ifx \fi) 
+\usepackage{xparse}% http://ctan.org/pkg/xparse
+\NewDocumentCommand{\Log}{o}{%
+  \IfNoValueTF{#1}{}{{}^{#1}\!}\log}%
+\usepackage{fullpage} % changes the margin
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{fancyvrb,xcolor}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[hyphenbreaks]{breakurl}
+\usepackage[hyphens]{url}
+\usepackage[margin=3cm]{geometry}
+\usepackage{relsize}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{url}
+\usepackage{biblatex}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\newcommand{\bigqm}[1][1]{\text{\larger[#1]{\textbf{?}}}}
+\lstset{
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+\graphicspath{ {images/} }
+
+\begin{document}
+%Header-Make sure you update this information!!!!
+\noindent
+\large\textbf{Assignment 8} \hfill \textbf{Hussam Hallak} \\
+\normalsize CS532, Web Science, Spring 2017\hfill CS Master's Student \\
+Old Dominion University, Computer Science Dept \hfill Prof: Dr. Nelson 
+
+\section*{Question 1:}
+Create a blog-term matrix.  Start by grabbing 100 blogs; include:
+
+http://f-measure.blogspot.com/
+
+http://ws-dl.blogspot.com/
+
+and grab 98 more as per the method shown in class.  Note that this
+method randomly chooses blogs and each student will separately do
+this process, so it is unlikely that these 98 blogs will be shared
+among students.  In other words, no sharing of blog data.  Upload
+to github your code for grabbing the blogs and provide a list of
+blog URIs, both in the report and in github.
+
+Use the blog title as the identifier for each blog (and row of the
+matrix).  Use the terms from every item/title (RSS) or entry/title
+(Atom) for the columns of the matrix.  The values are the frequency
+of occurrence.  Essentially you are replicating the format of the
+"blogdata.txt" file included with the PCI book code.  Limit the
+number of terms to the most "popular" (i.e., frequent) 1000 terms,
+this is *after* the criteria on p. 32 (slide 7) has been satisfied.
+Remember that blogs are paginated.  
+
+\subsection*{Answer:}
+The approach is divided into three steps:
+
+1. The first step is getting the urls for the blogs. I wrote a small python script, ``getblogurls.py'' to save both blog links provided in the assignment question, and to collect 98 random blogs. I collected more than 98 because I wanted to make sure that I have 100 unique blogs at the end. I ran the output file ``urls.txt'' through a python script I wrote for a previous assignment to remove duplicated urls. I finally used ``head'' command to grab the exact amount of blogs I need, 100 blogs, from the top of the file. I saved the final result in a file named ``100blogs.txt''.
+ 
+
+\lstinputlisting[language=Python, breakatwhitespace=〈false), label=The content of getblogurls.py, caption= The content of getblogurls.py]{Q1/getblogurls.py}
+
+After running the script and the command mentioned earlier, I got the following output:
+
+\begin{lstlisting}[language=bash, breakatwhitespace=〈false), label=Running getblogurls.py, caption=Running getblogurls.py]
+root@ima-app:/var/www/Hussam/A8# python getblogurls.py
+root@ima-app:/var/www/Hussam/A8# cat urls.txt | wc -l
+189
+root@ima-app:/var/www/Hussam/A8# python makeunique.py urls.txt uniqueurls.txt
+root@ima-app:/var/www/Hussam/A8# cat uniqueurls.txt | wc -l
+115
+root@ima-app:/var/www/Hussam/A8# head -n -15 uniqueurls.txt > 100blogs.txt
+root@ima-app:/var/www/Hussam/A8# cat 100blogs.txt |wc -l
+100
+root@ima-app:/var/www/Hussam/A8# cat 100blogs.txt
+http://f-measure.blogspot.com/
+http://ws-dl.blogspot.com/
+http://my-name-is-blue-canary.blogspot.com/
+http://fridaynightdream.blogspot.com/
+http://nathaliealves.blogspot.com/
+http://stephanieveto.blogspot.com/
+http://dcresider.blogspot.com/
+http://mobbie2.blogspot.com/
+http://nonsensealamode.blogspot.com/
+http://fractalpress.blogspot.com/
+http://ablazingflame.blogspot.com/
+http://pithytitlehere.blogspot.com/
+http://angie-dynamo.blogspot.com/
+http://revolverusa.blogspot.com/
+http://steel-city-rust.blogspot.com/
+http://www.hipindetroit.com/
+http://markeortega.blogspot.com/
+http://ilovetotaldestruction.blogspot.com/
+http://sixtyat60.blogspot.com/
+http://beyondthepond-wpl.blogspot.com/
+http://doyouneedatv.blogspot.com/
+http://franbrighton.blogspot.com/
+http://machineryofdenial.blogspot.com/
+https://urockradio.blogspot.com/
+http://guardtheguardians.blogspot.com/
+http://davecromwellwrites.blogspot.com/
+http://maggotcaviar.blogspot.com/
+http://storiesfromthecityradiovalencia.blogspot.com/
+http://thehubkxci.blogspot.com/
+http://www.sonology.com/
+http://adrianomarquesblog.blogspot.com/
+http://truthfulmood.blogspot.com/
+http://chantellesmedia2.blogspot.com/
+http://lost-places-hamburg.blogspot.com/
+http://cherryarea.blogspot.com/
+http://www.thestarkonline.com/
+https://norecordshopsleft.blogspot.com/
+http://blog.spinitron.com/
+http://mediastudiesa2advanced.blogspot.com/
+http://ps-music.blogspot.com/
+http://bonjourgirl.blogspot.com/
+http://dpl2blog.blogspot.com/
+http://ohyesjonsi.blogspot.com/
+http://musicneedshelp.blogspot.com/
+http://lostintheshuffle899.blogspot.com/
+http://hiiijaaackie.blogspot.com/
+http://www.holaolamusic.com/
+http://itll-glow-on-you.blogspot.com/
+http://semregrasluispink.blogspot.com/
+http://theidealcopy.blogspot.com/
+http://onestunningsingleegg.blogspot.com/
+http://mts-dailythemes.blogspot.com/
+http://bogglemethursday.blogspot.com/
+http://macthemost.blogspot.com/
+http://mesastivromia.blogspot.com/
+http://floorshimezipperboots.blogspot.com/
+http://jasminehodge.blogspot.com/
+http://theonionfield.blogspot.com/
+http://bleakbliss.blogspot.com/
+http://flipmpip.blogspot.com/
+http://duchessnonetheless.blogspot.com/
+http://dinosaursarefun.blogspot.com/
+http://stonehillsketchbook.blogspot.com/
+http://skinnyshoes.blogspot.com/
+http://spicyseatdolphin.blogspot.com/
+http://travelingneighborhood.blogspot.com/
+http://somecallitnoise.blogspot.com/
+http://elijace.blogspot.com/
+http://cuzmusicrocks.blogspot.com/
+http://organmyth.blogspot.com/
+http://thetremagazine.blogspot.com/
+http://johnandmaureensanto.blogspot.com/
+http://campusbuzzwsou.blogspot.com/
+http://hani-bittersweet.blogspot.com/
+http://rantsfromthepants.blogspot.com/
+http://simonegoes.blogspot.com/
+http://ourstatus.blogspot.com/
+http://momentarilymusical.blogspot.com/
+http://www.gypsyrhapsody.com/
+http://jlmdlhlcm1516.blogspot.com/
+http://didnotchart.blogspot.com/
+http://naoponhomusica.blogspot.com/
+http://castironsongs.blogspot.com/
+http://psychfolkmusic.blogspot.com/
+http://superchicken46.blogspot.com/
+http://paulinag-mediaa2.blogspot.com/
+http://sixeyes.blogspot.com/
+http://justplayingfavorites.blogspot.com/
+http://markfishers-musicreview.blogspot.com/
+http://encorenorthernireland.blogspot.com/
+http://mtjrrantsravesonmusic.blogspot.com/
+http://myopiamuse.blogspot.com/
+http://alayerofchips.blogspot.com/
+http://barakoffein.blogspot.com/
+http://makeupmusicandfashion.blogspot.com/
+http://glipress.blogspot.com/
+http://mileinmine.blogspot.com/
+http://kidchair.blogspot.com/
+http://mandolinnn.blogspot.com/
+http://themusicbinge.blogspot.com/
+root@ima-app:/var/www/Hussam/A8#
+\end{lstlisting}
+
+
+2. The next step is getting all pages for each blog we collected. I wrote a python script ``getpages.py'' to do that. It takes the file ``100blogs.txt'' as input, command line argument. The script grabs all pages for each blog in the file. The output is saved in a file named ``pages.txt''. The content of the file ``pages.txt'' is too big to include in the report, but it is included in the ``Q1'' folder.
+
+\lstinputlisting[language=Python, breakatwhitespace=〈false), label=The content of getpages.py, caption= The content of getpages.py]{Q1/getpages.py}
+
+3. The last step is to create a blog-term matrix from the blogs' pages we collected in step 2. I used the script provided by ``PCI'' textbook. The file ``pages.txt'' is taken as input from the command line. The output, the desired blog-term matrix, is saved to the file ``blogdata.txt''. The content of the file ``blogdata.txt'' is too big to include in the report, but it is included in the ``Q1'' folder. Here is a screen shot of the file ``blogdata.txt'':
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{blogdata.png}
+\end{figure}
+
+\subsection*{Included Files:}
+100blogs.txt, blogdata.txt, generatefeedvector.py, getblogurls.py, getpages.py, makeunique.py, pages.txt, uniqueurls.txt, urls.txt, blogdata.png
+
+
+\section*{Question 2:}
+Create an ASCII and JPEG dendrogram that clusters (i.e., HAC)
+the most similar blogs (see slides 12-13).  Include the JPEG in
+your report and upload the ascii file to github (it will be too
+unwieldy for inclusion in the report).
+
+\subsection*{Answer:}
+In order to create an ASCII and JPEG dendogram, I used the script provided by ``PCI'' textbook and saved it to a file ``makedend.py'' to run it. 
+
+\lstinputlisting[language=Python, breakatwhitespace=〈false), label=The content of makedend.py, caption= The content of makedend.py]{Q2/makedend.py}
+
+The script uses the file blogdata.txt to create the dendogram that clusters the most similar blogs. The ASCII dendogram is saved to the file ``dend.txt'' and the JPEG dendogram is saved to the file ``dend.jpg''.
+\begin{lstlisting}[language=bash, breakatwhitespace=〈false), label=Running makedend.py, caption=Running makedend.py]
+root@ima-app:/var/www/Hussam/A8# python makedend.py > dend.txt
+root@ima-app:/var/www/Hussam/A8# ls
+100blogs.txt  dend.jpg  generatefeedvector.py  getpages.py  makeunique.py  uniqueurls.txt
+blogdata.txt  dend.txt  getblogurls.py         makedend.py  pages.txt      urls.txt
+root@ima-app:/var/www/Hussam/A8# cat dend.txt
+-
+  -
+    IoTube     :)
+    -
+      -
+        -
+          -
+            Floorshime Zipper Boots
+            -
+              Riley Haas' blog
+              A2 MEDIA COURSEWORK JOINT BLOG
+          -
+            Cuz Music Rocks
+            *Sixeyes: by Alan Williamson
+        -
+          The Ideal Copy
+          -
+            Boggle Me Thursday
+            -
+              -
+                Spinitron Charts
+                -
+                  Web Science and Digital Libraries Research Group
+                  -
+                    Bonjour Girl
+                    -
+                      macthemost
+                      -
+                        THE HUB
+                        GYPSY RHAPSODY
+              -
+                -
+                  ORGANMYTH
+                  It'll Glow On You
+                -
+                  Stonehill Sketchbook
+                  -
+                    guardtheguardians
+                    -
+                      -
+                        I/LOVE/TOTAL/DESTRUCTION
+                        -
+                          -
+                            -
+                              Some Call It Noise....
+                              -
+                                Did Not Chart
+                                -
+                                  -
+                                    holaOLA
+                                    Everything Starts With an A...
+                                  -
+                                    -
+                                      MTJR RANTS & RAVES ON MUSIC
+                                      -
+                                        KiDCHAIR
+                                        -
+                                          Revolver USA Distribution & Midheaven mailorder
+                                          -
+                                            -
+                                              Music-Drop Magazine
+                                              Myopiamuse
+                                            -
+                                              The Stark Online
+                                              -
+                                                DaveCromwell Writes
+                                                -
+                                                  Jasmine Hodge
+                                                  Encore
+                                    -
+                                      MAGGOT CAVIAR
+                                      F-Measure
+                            -
+                              ~ mavaffantastico ~
+                              -
+                                @65 Sounding Booth
+                                The Music Binge
+                          -
+                            A layer of chips
+                            -
+                              simone goes
+                              -
+                                She's mad but she's magic. There's no lie in her fire.
+                                -
+                                  i'm in too truthful a mood
+                                  -
+                                    music of the moment
+                                    -
+                                      -
+                                        A Day in the Life of...Me!!
+                                        Make Up, Music & Fashion
+                                      -
+                                        -
+                                          Cherry Area
+                                          -
+                                            -
+                                              MarkEOrtega's Journalism Portfolio
+                                              Eli Jace | The Mind Is A Terrible Thing To Paste
+                                            -
+                                              -
+                                                Mile In Mine
+                                                -
+                                                  The Great Adventure 2016
+                                                  Beyond the pond
+                                              -
+                                                Pithy Title Here
+                                                -
+                                                  Stephanie Veto Photography
+                                                  -
+                                                    Tremagazine
+                                                    -
+                                                      Hip In Detroit
+                                                      -
+                                                        -
+                                                          Playing Favorites
+                                                          My Name Is Blue Canary
+                                                        -
+                                                          The Campus Buzz on WSOU
+                                                          -
+                                                            from a voice plantation
+                                                            -
+                                                              nonsense a la mode
+                                                              -
+                                                                jaaackie.
+                                                                -
+                                                                  She May Be Naked
+                                                                  -
+                                                                    Pirate's Log
+                                                                    -
+                                                                      bittersweet
+                                                                      -
+                                                                        Steel City Rust
+                                                                        Rants from the Pants
+                                        -
+                                          a duchess nonethelesss
+                                          Cast Iron Songs
+                      -
+                        Sonology
+                        sweeping the kitchen
+      -
+        -
+          FOLK IS NOT HAPPY
+          -
+            Friday Night Dream
+            -
+              SEM REGRAS
+              -
+                Out of my Mind
+                -
+                  adrianoblog
+                  Who needs a TV?
+        -
+          MarkFisher's-MusicReview
+          -
+            Fran Brighton
+            -
+              Lost in the Shuffle
+              -
+                Stories From the City, Stories From the Sea
+                fractalpress.gr
+  -
+    -
+      Bleak Bliss
+      -
+        INDIEohren.!
+        LOST  PLACES
+    -
+      -
+        -
+          Paulina Gamero. Media Studies A2
+          -
+            Chantelle Swain A2 Media Studies
+            Advanced Portfolio - Josh Pamfilo - Candidate Number 2186 - Centre Number 16607 - A2 Media Studies
+        -
+          The Themes of My Life
+          One Stunning Single Egg
+      -
+        -
+          If You Give a Girl a Camera...
+          -
+            Angie Dynamo
+            the traveling neighborhood
+        -
+          Happy Accidents
+          -
+            GLI Press
+            STATUS
+root@ima-app:/var/www/Hussam/A8#
+
+\end{lstlisting}
+
+\textbf{JPEG dendrogram:}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.35]{dend.jpg}
+\end{figure}
+
+\subsection*{Included Files:}
+blogdata.txt, makedend.py, dend.txt, dend.jpg
+
+\section*{Question 3:}
+Cluster the blogs using K-Means, using k=5,10,20. (see slide 18).  Print the values in each centroid, for each value of k.  How many iterations were required for each value of k?
+
+\subsection*{Answer:}
+In order to cluster the blogs using K-Means, I used the function ``kcluster(data,k)'' from the script provided by ``PCI'' textbook and saved the script to a file ``kclust.py'' to run it. 
+
+\lstinputlisting[language=Python, breakatwhitespace=〈false), label=The content of kclust.py, caption= The content of kclust.py]{Q3/kclust.py}
+
+The script clusters the blogs using K-Means for K = 5, 10, 20 respectively, and prints out all centroids. It also prints out the number of iterations that were required for K = 5, 10, 20. These values are:
+
+For K = 5: 5 Iterations
+
+For K = 10: 4 Iterations
+
+For K = 20: 5 Iterations
+
+The output is saved to a file ``kclust.txt''.
+
+\begin{lstlisting}[language=bash, breakatwhitespace=〈false), label=Running kclust.py, caption=Running kclust.py]
+root@ima-app:/var/www/Hussam/A8# python kclust.py > kclust.txt
+root@ima-app:/var/www/Hussam/A8# cat kclust.txt
+For k = 5:
+
+----------
+
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+['Floorshime Zipper Boots', 'DaveCromwell Writes', 'Chantelle Swain A2 Media Studies', 'A2 MEDIA COURSEWORK JOINT BLOG', 'Paulina Gamero. Media Studies A2', 'The Themes of My Life', 'Jasmine Hodge', 'Advanced Portfolio - Josh Pamfilo - Candidate Number 2186 - Centre Number 16607 - A2 Media Studies', 'Myopiamuse', 'Revolver USA Distribution & Midheaven mailorder']
+["Riley Haas' blog", 'Cuz Music Rocks', 'She May Be Naked', 'Pithy Title Here', 'THE HUB', 'Steel City Rust', 'ORGANMYTH', 'GLI Press', 'Stephanie Veto Photography', 'The Great Adventure 2016', 'Stonehill Sketchbook', 'a duchess nonethelesss', 'jaaackie.', 'nonsense a la mode', 'Happy Accidents', 'music of the moment', 'Angie Dynamo', 'Bonjour Girl', 'Playing Favorites', "Pirate's Log", 'Eli Jace | The Mind Is A Terrible Thing To Paste', 'My Name Is Blue Canary', "i'm in too truthful a mood", 'Beyond the pond', 'Mile In Mine', 'The Ideal Copy', 'A layer of chips', 'from a voice plantation', 'Sonology', 'Tremagazine', 'If You Give a Girl a Camera...', 'bittersweet', 'sweeping the kitchen', 'A Day in the Life of...Me!!', 'Rants from the Pants', 'STATUS', 'Cherry Area', 'The Campus Buzz on WSOU', 'Hip In Detroit', "It'll Glow On You", "She's mad but she's magic. There's no lie in her fire.", 'Make Up, Music & Fashion', 'Cast Iron Songs', 'simone goes', 'guardtheguardians']
+['Spinitron Charts', "MarkEOrtega's Journalism Portfolio", 'IoTube     :)', 'Boggle Me Thursday', 'One Stunning Single Egg', "MarkFisher's-MusicReview"]
+['holaOLA', 'Did Not Chart', 'FOLK IS NOT HAPPY', '@65 Sounding Booth', 'GYPSY RHAPSODY', 'MAGGOT CAVIAR', 'Music-Drop Magazine', 'MTJR RANTS & RAVES ON MUSIC', '~ mavaffantastico ~', '*Sixeyes: by Alan Williamson', 'Everything Starts With an A...', 'Some Call It Noise....', 'KiDCHAIR', 'The Music Binge', 'The Stark Online', 'I/LOVE/TOTAL/DESTRUCTION', 'F-Measure', 'Encore']
+['Bleak Bliss', 'SEM REGRAS', 'Friday Night Dream', 'Web Science and Digital Libraries Research Group', 'Fran Brighton', 'Stories From the City, Stories From the Sea', 'Lost in the Shuffle', 'adrianoblog', 'fractalpress.gr', 'INDIEohren.!', 'the traveling neighborhood', 'Who needs a TV?', 'macthemost', 'Out of my Mind', 'LOST  PLACES']
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+For k = 10:
+
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+['Floorshime Zipper Boots', 'DaveCromwell Writes', 'A2 MEDIA COURSEWORK JOINT BLOG', 'Advanced Portfolio - Josh Pamfilo - Candidate Number 2186 - Centre Number 16607 - A2 Media Studies']
+['THE HUB', 'Stories From the City, Stories From the Sea', 'Lost in the Shuffle', 'music of the moment', 'Playing Favorites', 'My Name Is Blue Canary', 'Tremagazine', 'Myopiamuse']
+['holaOLA', 'Did Not Chart', 'FOLK IS NOT HAPPY', 'INDIEohren.!', 'GYPSY RHAPSODY', 'Everything Starts With an A...', 'A layer of chips', 'Some Call It Noise....', 'The Music Binge', 'Jasmine Hodge', 'The Stark Online', 'Encore']
+['Spinitron Charts', "MarkEOrtega's Journalism Portfolio", 'Eli Jace | The Mind Is A Terrible Thing To Paste', 'If You Give a Girl a Camera...', 'The Campus Buzz on WSOU']
+['IoTube     :)', 'fractalpress.gr', 'MAGGOT CAVIAR', 'MTJR RANTS & RAVES ON MUSIC', '~ mavaffantastico ~', '*Sixeyes: by Alan Williamson', 'F-Measure', "MarkFisher's-MusicReview"]
+['SEM REGRAS', 'Friday Night Dream', 'adrianoblog', 'Paulina Gamero. Media Studies A2', 'Who needs a TV?', 'Out of my Mind']
+['Bleak Bliss', 'Pithy Title Here', 'Steel City Rust', 'ORGANMYTH', 'Stonehill Sketchbook', 'a duchess nonethelesss', 'nonsense a la mode', 'Music-Drop Magazine', "i'm in too truthful a mood", 'Beyond the pond', 'macthemost', 'Mile In Mine', 'KiDCHAIR', 'LOST  PLACES', 'sweeping the kitchen', 'One Stunning Single Egg', "She's mad but she's magic. There's no lie in her fire."]
+['Web Science and Digital Libraries Research Group', 'Fran Brighton', 'Angie Dynamo', 'Bonjour Girl', "Pirate's Log", 'Boggle Me Thursday', 'The Ideal Copy', 'I/LOVE/TOTAL/DESTRUCTION', "It'll Glow On You", 'Cast Iron Songs']
+["Riley Haas' blog", 'Cuz Music Rocks', 'She May Be Naked', 'GLI Press', 'Stephanie Veto Photography', 'Chantelle Swain A2 Media Studies', 'jaaackie.', 'Happy Accidents', '@65 Sounding Booth', 'from a voice plantation', 'bittersweet', 'A Day in the Life of...Me!!', 'Rants from the Pants', 'STATUS', 'Cherry Area', 'Make Up, Music & Fashion', 'simone goes']
+['The Great Adventure 2016', 'the traveling neighborhood', 'The Themes of My Life', 'Sonology', 'Hip In Detroit', 'Revolver USA Distribution & Midheaven mailorder', 'guardtheguardians']
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+For k = 20:
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+['ORGANMYTH', 'The Great Adventure 2016', 'A2 MEDIA COURSEWORK JOINT BLOG', 'Music-Drop Magazine', 'MTJR RANTS & RAVES ON MUSIC', 'macthemost', 'Myopiamuse']
+['holaOLA', 'FOLK IS NOT HAPPY', '@65 Sounding Booth', 'fractalpress.gr', '~ mavaffantastico ~', 'Everything Starts With an A...', "MarkFisher's-MusicReview"]
+['The Ideal Copy', 'The Themes of My Life', 'KiDCHAIR', 'Advanced Portfolio - Josh Pamfilo - Candidate Number 2186 - Centre Number 16607 - A2 Media Studies']
+[]
+['SEM REGRAS', 'Friday Night Dream', 'adrianoblog', 'Who needs a TV?', 'Out of my Mind']
+['Happy Accidents', 'A layer of chips']
+['music of the moment', 'Bonjour Girl', 'Playing Favorites', 'Tremagazine']
+['INDIEohren.!', 'LOST  PLACES']
+['Floorshime Zipper Boots', 'DaveCromwell Writes', 'GYPSY RHAPSODY']
+['Sonology', 'sweeping the kitchen', 'The Music Binge', 'Jasmine Hodge']
+['Chantelle Swain A2 Media Studies', 'Boggle Me Thursday']
+['Paulina Gamero. Media Studies A2']
+['Cast Iron Songs']
+['A Day in the Life of...Me!!', 'Make Up, Music & Fashion']
+['Bleak Bliss', 'Fran Brighton', 'Stories From the City, Stories From the Sea', 'Lost in the Shuffle', 'IoTube     :)', 'One Stunning Single Egg']
+['MAGGOT CAVIAR', 'Some Call It Noise....', 'I/LOVE/TOTAL/DESTRUCTION', 'F-Measure', 'Encore', 'Revolver USA Distribution & Midheaven mailorder', 'guardtheguardians']
+['Angie Dynamo', 'the traveling neighborhood']
+['Cuz Music Rocks', 'Pithy Title Here', 'Steel City Rust', 'GLI Press', 'Stephanie Veto Photography', 'Stonehill Sketchbook', 'a duchess nonethelesss', 'jaaackie.', 'nonsense a la mode', "Pirate's Log", "i'm in too truthful a mood", 'Beyond the pond', 'Mile In Mine', 'bittersweet', 'Rants from the Pants', 'STATUS', "She's mad but she's magic. There's no lie in her fire.", 'simone goes']
+['THE HUB', "MarkEOrtega's Journalism Portfolio", 'My Name Is Blue Canary', 'from a voice plantation', 'If You Give a Girl a Camera...', 'The Campus Buzz on WSOU', 'Hip In Detroit', "It'll Glow On You"]
+["Riley Haas' blog", 'She May Be Naked', 'Spinitron Charts', 'Web Science and Digital Libraries Research Group', 'Did Not Chart', 'Eli Jace | The Mind Is A Terrible Thing To Paste', '*Sixeyes: by Alan Williamson', 'The Stark Online', 'Cherry Area']
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+root@ima-app:/var/www/Hussam/A8#
+\end{lstlisting}
+
+\subsection*{Included Files:}
+blogdata.txt, kclust.py, kclust.txt
+
+\section*{Question 4:}
+Use MDS to create a JPEG of the blogs similar to slide 29 of the week 12 lecture.  How many iterations were required?
+
+\subsection*{Answer:}
+In order to create the ``blogs' JPEG'' using Multidimensional Scaling, I used the function ``scaledown(data)'' and ``draw2d(coords,blognames,jpeg='2d.jpg')'' from the script provided by ``PCI'' textbook and saved the script to a file ``make2d.py'' to run it. 
+
+\lstinputlisting[language=Python, breakatwhitespace=〈false), label=The content of make2d.py, caption= The content of make2d.py]{Q4/make2d.py}
+
+The number of iterations that was required to go from 4176.44795059 down to 2713.69160666 average error, before the error began to increase, is 238 iterations.
+
+\textbf{Note:}
+I ran the script multiple times, and the number of iterations required was largely different from previous runs of the same script.   
+
+The text output is saved to a file ``kclust.txt''.
+
+The resulted JPEG file is named ``2d.jpg''.
+
+\begin{lstlisting}[language=bash, breakatwhitespace=〈false), label=Running make2d.py, caption=Running make2d.py]
+root@ima-app:/var/www/Hussam/A8# python make2d.py > 2d.txt
+root@ima-app:/var/www/Hussam/A8# cat 2d.txt
+1  : 4176.44795059
+2  : 3199.28206864
+3  : 3087.63197799
+4  : 3035.86849153
+5  : 3000.05251741
+6  : 2974.06006622
+7  : 2950.81068454
+8  : 2931.81928236
+9  : 2913.52420971
+10  : 2897.28266551
+11  : 2883.94216807
+12  : 2874.55698459
+13  : 2866.14284263
+14  : 2859.09522785
+15  : 2852.51996715
+16  : 2847.93589556
+17  : 2844.97611319
+18  : 2843.37581751
+19  : 2842.17059266
+20  : 2841.16455409
+21  : 2840.06541549
+22  : 2839.05109437
+23  : 2837.74763181
+24  : 2836.43804045
+25  : 2835.15695415
+26  : 2833.87829561
+27  : 2832.80149691
+28  : 2831.67786657
+29  : 2830.65511729
+30  : 2829.87435441
+31  : 2829.32153715
+32  : 2828.55376826
+33  : 2827.7496543
+34  : 2826.86344611
+35  : 2825.74841949
+36  : 2824.46203448
+37  : 2823.2026712
+38  : 2822.01411055
+39  : 2820.80002279
+40  : 2819.48607499
+41  : 2818.18110124
+42  : 2816.86419709
+43  : 2815.44030833
+44  : 2814.0899552
+45  : 2812.95682783
+46  : 2811.89186831
+47  : 2810.89183676
+48  : 2810.01054415
+49  : 2809.2273762
+50  : 2808.50086884
+51  : 2807.62861644
+52  : 2806.66489255
+53  : 2805.63905059
+54  : 2804.56841114
+55  : 2803.43278769
+56  : 2802.28649074
+57  : 2801.14982711
+58  : 2799.95583679
+59  : 2798.82267525
+60  : 2797.70255201
+61  : 2796.56387824
+62  : 2795.46240635
+63  : 2794.44451683
+64  : 2793.24758655
+65  : 2791.99860426
+66  : 2790.80947367
+67  : 2789.49693255
+68  : 2788.28645392
+69  : 2787.15717997
+70  : 2786.23556888
+71  : 2785.3941433
+72  : 2784.53589236
+73  : 2783.64837053
+74  : 2782.75089986
+75  : 2781.85139077
+76  : 2781.04046432
+77  : 2780.23940719
+78  : 2779.42855537
+79  : 2778.56931082
+80  : 2777.64189775
+81  : 2776.61097452
+82  : 2775.54424706
+83  : 2774.59994577
+84  : 2773.84374295
+85  : 2772.9943342
+86  : 2772.13348857
+87  : 2771.26367692
+88  : 2770.57112026
+89  : 2769.9542129
+90  : 2769.45393203
+91  : 2769.08579919
+92  : 2768.74806773
+93  : 2768.44144758
+94  : 2768.24060634
+95  : 2768.0129232
+96  : 2767.77405026
+97  : 2767.60589926
+98  : 2767.43850514
+99  : 2767.26821362
+100  : 2767.16499183
+101  : 2767.08604513
+102  : 2766.97426806
+103  : 2766.76250708
+104  : 2766.48725457
+105  : 2766.20644509
+106  : 2765.82132743
+107  : 2765.39982485
+108  : 2764.95634555
+109  : 2764.46500771
+110  : 2763.98319869
+111  : 2763.48741703
+112  : 2762.94099281
+113  : 2762.34626919
+114  : 2761.71975662
+115  : 2761.05235516
+116  : 2760.32365333
+117  : 2759.49306678
+118  : 2758.63609483
+119  : 2757.69295584
+120  : 2756.67548966
+121  : 2755.59124786
+122  : 2754.53280881
+123  : 2753.61031153
+124  : 2752.85993519
+125  : 2752.1613236
+126  : 2751.57403018
+127  : 2750.99693198
+128  : 2750.447924
+129  : 2749.8400888
+130  : 2749.1683332
+131  : 2748.47100815
+132  : 2747.82876622
+133  : 2747.13431568
+134  : 2746.4293871
+135  : 2745.68410759
+136  : 2744.89026099
+137  : 2744.1631112
+138  : 2743.4542112
+139  : 2742.7088057
+140  : 2741.95893598
+141  : 2741.37354834
+142  : 2740.85058511
+143  : 2740.36835667
+144  : 2739.84523429
+145  : 2739.34624391
+146  : 2738.94683379
+147  : 2738.5541387
+148  : 2738.10896558
+149  : 2737.6453798
+150  : 2737.20503215
+151  : 2736.82617571
+152  : 2736.46765133
+153  : 2736.14620665
+154  : 2735.81239356
+155  : 2735.45724624
+156  : 2735.13463109
+157  : 2734.82977912
+158  : 2734.51466014
+159  : 2734.2250341
+160  : 2733.95400037
+161  : 2733.71627304
+162  : 2733.50849413
+163  : 2733.32717627
+164  : 2733.15803307
+165  : 2732.99852703
+166  : 2732.8152737
+167  : 2732.60819925
+168  : 2732.39483262
+169  : 2732.15388231
+170  : 2731.90814637
+171  : 2731.59832104
+172  : 2731.24195043
+173  : 2730.86158811
+174  : 2730.41301182
+175  : 2729.96852227
+176  : 2729.50702729
+177  : 2729.02699885
+178  : 2728.46415847
+179  : 2727.86506474
+180  : 2727.41350813
+181  : 2726.99116034
+182  : 2726.5653195
+183  : 2726.13225936
+184  : 2725.72839041
+185  : 2725.31053573
+186  : 2724.86531614
+187  : 2724.43720122
+188  : 2724.11646089
+189  : 2723.85376619
+190  : 2723.62199869
+191  : 2723.37974772
+192  : 2723.11971778
+193  : 2722.8132779
+194  : 2722.53031244
+195  : 2722.29335539
+196  : 2722.10370126
+197  : 2721.87285605
+198  : 2721.5872956
+199  : 2721.2471181
+200  : 2720.89240326
+201  : 2720.52725841
+202  : 2720.18213744
+203  : 2719.83511486
+204  : 2719.55826524
+205  : 2719.41760148
+206  : 2719.27551294
+207  : 2719.14204388
+208  : 2718.95806795
+209  : 2718.73566583
+210  : 2718.47296645
+211  : 2718.221627
+212  : 2717.97024178
+213  : 2717.69059412
+214  : 2717.37282433
+215  : 2717.04614113
+216  : 2716.71438665
+217  : 2716.38270864
+218  : 2716.08187315
+219  : 2715.83634292
+220  : 2715.65838332
+221  : 2715.51324516
+222  : 2715.41054588
+223  : 2715.29736663
+224  : 2715.17143061
+225  : 2715.03777637
+226  : 2714.88833114
+227  : 2714.73588278
+228  : 2714.57570795
+229  : 2714.45622897
+230  : 2714.37205487
+231  : 2714.26687479
+232  : 2714.15655162
+233  : 2714.03444989
+234  : 2713.94059924
+235  : 2713.85364815
+236  : 2713.75560392
+237  : 2713.69694917
+238  : 2713.69160666
+239  : 2713.69509067
+root@ima-app:/var/www/Hussam/A8# ls
+100blogs.txt  2d.txt        dend.jpg  generatefeedvector.py  getpages.py  kclust.txt  makedend.py    pages.txt       urls.txt
+2d.jpg        blogdata.txt  dend.txt  getblogurls.py         kclust.py    make2d.py   makeunique.py  uniqueurls.txt
+root@ima-app:/var/www/Hussam/A8#
+\end{lstlisting}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.25]{2d.jpg}
+\end{figure}
+
+\subsection*{Included Files:}
+blogdata.txt, make2d.py, 2d.txt, 2d.jpg
+
+\end{document}

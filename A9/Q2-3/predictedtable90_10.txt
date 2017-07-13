@@ -1,0 +1,11 @@
+Title|Actual|Predicted
+Using Tables >> HTML Table Size - code  - (PART_23)|Tutorials|Tutorials
+Using Tables >> Table Background Color and Image - (PART_22)|Tutorials|Tutorials
+Using Tables >> HTML Table Border - (PART_21)|Tutorials|Tutorials
+Using Tables >> Creating HTML Table - (PART_20)|Tutorials|Tutorials
+Special Effects >> Special Effects - Blinking Text Tag- (PART_19)|Tutorials|Tutorials
+Special Effects >> Special Effects - Marquee Tag- (PART_18)|Tutorials|Tutorials
+Special Effects >> Special Effects - Marquee Tag -(PART_17)|Tutorials|Tutorials
+LINKS >> Mail Link Code -(PART_16)|Tutorials|Tutorials
+LINKS >> LINK Handling Code  -(PART_15)|Tutorials|Tutorials
+LINKS >> HTML LINKS Tag  -(PART_14)|Tutorials|Tutorials

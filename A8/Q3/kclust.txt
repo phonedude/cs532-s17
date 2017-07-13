@@ -1,0 +1,65 @@
+For k = 5:
+
+----------
+
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+['Floorshime Zipper Boots', 'DaveCromwell Writes', 'Chantelle Swain A2 Media Studies', 'A2 MEDIA COURSEWORK JOINT BLOG', 'Paulina Gamero. Media Studies A2', 'The Themes of My Life', 'Jasmine Hodge', 'Advanced Portfolio - Josh Pamfilo - Candidate Number 2186 - Centre Number 16607 - A2 Media Studies', 'Myopiamuse', 'Revolver USA Distribution & Midheaven mailorder']
+["Riley Haas' blog", 'Cuz Music Rocks', 'She May Be Naked', 'Pithy Title Here', 'THE HUB', 'Steel City Rust', 'ORGANMYTH', 'GLI Press', 'Stephanie Veto Photography', 'The Great Adventure 2016', 'Stonehill Sketchbook', 'a duchess nonethelesss', 'jaaackie.', 'nonsense a la mode', 'Happy Accidents', 'music of the moment', 'Angie Dynamo', 'Bonjour Girl', 'Playing Favorites', "Pirate's Log", 'Eli Jace | The Mind Is A Terrible Thing To Paste', 'My Name Is Blue Canary', "i'm in too truthful a mood", 'Beyond the pond', 'Mile In Mine', 'The Ideal Copy', 'A layer of chips', 'from a voice plantation', 'Sonology', 'Tremagazine', 'If You Give a Girl a Camera...', 'bittersweet', 'sweeping the kitchen', 'A Day in the Life of...Me!!', 'Rants from the Pants', 'STATUS', 'Cherry Area', 'The Campus Buzz on WSOU', 'Hip In Detroit', "It'll Glow On You", "She's mad but she's magic. There's no lie in her fire.", 'Make Up, Music & Fashion', 'Cast Iron Songs', 'simone goes', 'guardtheguardians']
+['Spinitron Charts', "MarkEOrtega's Journalism Portfolio", 'IoTube     :)', 'Boggle Me Thursday', 'One Stunning Single Egg', "MarkFisher's-MusicReview"]
+['holaOLA', 'Did Not Chart', 'FOLK IS NOT HAPPY', '@65 Sounding Booth', 'GYPSY RHAPSODY', 'MAGGOT CAVIAR', 'Music-Drop Magazine', 'MTJR RANTS & RAVES ON MUSIC', '~ mavaffantastico ~', '*Sixeyes: by Alan Williamson', 'Everything Starts With an A...', 'Some Call It Noise....', 'KiDCHAIR', 'The Music Binge', 'The Stark Online', 'I/LOVE/TOTAL/DESTRUCTION', 'F-Measure', 'Encore']
+['Bleak Bliss', 'SEM REGRAS', 'Friday Night Dream', 'Web Science and Digital Libraries Research Group', 'Fran Brighton', 'Stories From the City, Stories From the Sea', 'Lost in the Shuffle', 'adrianoblog', 'fractalpress.gr', 'INDIEohren.!', 'the traveling neighborhood', 'Who needs a TV?', 'macthemost', 'Out of my Mind', 'LOST  PLACES']
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+For k = 10:
+
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+['Floorshime Zipper Boots', 'DaveCromwell Writes', 'A2 MEDIA COURSEWORK JOINT BLOG', 'Advanced Portfolio - Josh Pamfilo - Candidate Number 2186 - Centre Number 16607 - A2 Media Studies']
+['THE HUB', 'Stories From the City, Stories From the Sea', 'Lost in the Shuffle', 'music of the moment', 'Playing Favorites', 'My Name Is Blue Canary', 'Tremagazine', 'Myopiamuse']
+['holaOLA', 'Did Not Chart', 'FOLK IS NOT HAPPY', 'INDIEohren.!', 'GYPSY RHAPSODY', 'Everything Starts With an A...', 'A layer of chips', 'Some Call It Noise....', 'The Music Binge', 'Jasmine Hodge', 'The Stark Online', 'Encore']
+['Spinitron Charts', "MarkEOrtega's Journalism Portfolio", 'Eli Jace | The Mind Is A Terrible Thing To Paste', 'If You Give a Girl a Camera...', 'The Campus Buzz on WSOU']
+['IoTube     :)', 'fractalpress.gr', 'MAGGOT CAVIAR', 'MTJR RANTS & RAVES ON MUSIC', '~ mavaffantastico ~', '*Sixeyes: by Alan Williamson', 'F-Measure', "MarkFisher's-MusicReview"]
+['SEM REGRAS', 'Friday Night Dream', 'adrianoblog', 'Paulina Gamero. Media Studies A2', 'Who needs a TV?', 'Out of my Mind']
+['Bleak Bliss', 'Pithy Title Here', 'Steel City Rust', 'ORGANMYTH', 'Stonehill Sketchbook', 'a duchess nonethelesss', 'nonsense a la mode', 'Music-Drop Magazine', "i'm in too truthful a mood", 'Beyond the pond', 'macthemost', 'Mile In Mine', 'KiDCHAIR', 'LOST  PLACES', 'sweeping the kitchen', 'One Stunning Single Egg', "She's mad but she's magic. There's no lie in her fire."]
+['Web Science and Digital Libraries Research Group', 'Fran Brighton', 'Angie Dynamo', 'Bonjour Girl', "Pirate's Log", 'Boggle Me Thursday', 'The Ideal Copy', 'I/LOVE/TOTAL/DESTRUCTION', "It'll Glow On You", 'Cast Iron Songs']
+["Riley Haas' blog", 'Cuz Music Rocks', 'She May Be Naked', 'GLI Press', 'Stephanie Veto Photography', 'Chantelle Swain A2 Media Studies', 'jaaackie.', 'Happy Accidents', '@65 Sounding Booth', 'from a voice plantation', 'bittersweet', 'A Day in the Life of...Me!!', 'Rants from the Pants', 'STATUS', 'Cherry Area', 'Make Up, Music & Fashion', 'simone goes']
+['The Great Adventure 2016', 'the traveling neighborhood', 'The Themes of My Life', 'Sonology', 'Hip In Detroit', 'Revolver USA Distribution & Midheaven mailorder', 'guardtheguardians']
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+For k = 20:
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+['ORGANMYTH', 'The Great Adventure 2016', 'A2 MEDIA COURSEWORK JOINT BLOG', 'Music-Drop Magazine', 'MTJR RANTS & RAVES ON MUSIC', 'macthemost', 'Myopiamuse']
+['holaOLA', 'FOLK IS NOT HAPPY', '@65 Sounding Booth', 'fractalpress.gr', '~ mavaffantastico ~', 'Everything Starts With an A...', "MarkFisher's-MusicReview"]
+['The Ideal Copy', 'The Themes of My Life', 'KiDCHAIR', 'Advanced Portfolio - Josh Pamfilo - Candidate Number 2186 - Centre Number 16607 - A2 Media Studies']
+[]
+['SEM REGRAS', 'Friday Night Dream', 'adrianoblog', 'Who needs a TV?', 'Out of my Mind']
+['Happy Accidents', 'A layer of chips']
+['music of the moment', 'Bonjour Girl', 'Playing Favorites', 'Tremagazine']
+['INDIEohren.!', 'LOST  PLACES']
+['Floorshime Zipper Boots', 'DaveCromwell Writes', 'GYPSY RHAPSODY']
+['Sonology', 'sweeping the kitchen', 'The Music Binge', 'Jasmine Hodge']
+['Chantelle Swain A2 Media Studies', 'Boggle Me Thursday']
+['Paulina Gamero. Media Studies A2']
+['Cast Iron Songs']
+['A Day in the Life of...Me!!', 'Make Up, Music & Fashion']
+['Bleak Bliss', 'Fran Brighton', 'Stories From the City, Stories From the Sea', 'Lost in the Shuffle', 'IoTube     :)', 'One Stunning Single Egg']
+['MAGGOT CAVIAR', 'Some Call It Noise....', 'I/LOVE/TOTAL/DESTRUCTION', 'F-Measure', 'Encore', 'Revolver USA Distribution & Midheaven mailorder', 'guardtheguardians']
+['Angie Dynamo', 'the traveling neighborhood']
+['Cuz Music Rocks', 'Pithy Title Here', 'Steel City Rust', 'GLI Press', 'Stephanie Veto Photography', 'Stonehill Sketchbook', 'a duchess nonethelesss', 'jaaackie.', 'nonsense a la mode', "Pirate's Log", "i'm in too truthful a mood", 'Beyond the pond', 'Mile In Mine', 'bittersweet', 'Rants from the Pants', 'STATUS', "She's mad but she's magic. There's no lie in her fire.", 'simone goes']
+['THE HUB', "MarkEOrtega's Journalism Portfolio", 'My Name Is Blue Canary', 'from a voice plantation', 'If You Give a Girl a Camera...', 'The Campus Buzz on WSOU', 'Hip In Detroit', "It'll Glow On You"]
+["Riley Haas' blog", 'She May Be Naked', 'Spinitron Charts', 'Web Science and Digital Libraries Research Group', 'Did Not Chart', 'Eli Jace | The Mind Is A Terrible Thing To Paste', '*Sixeyes: by Alan Williamson', 'The Stark Online', 'Cherry Area']
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+

@@ -1,0 +1,45 @@
+root@ima-app:/var/www/Hussam# curl http://memgator.cs.odu.edu/timemap/link/http://www.bbc.co.uk/news/business-37047416?utm_source=twitterfeed&utm_medium=twitter
+[1] 21757
+root@ima-app:/var/www/Hussam# 404 page not found
+[1]+  Done                    curl http://memgator.cs.odu.edu/timemap/link/http://www.bbc.co.uk/news/business-37047416?utm_source=twitterfeed
+root@ima-app:/var/www/Hussam# curl -s -o /dev/null -v http://www.bbc.com/news/business-37047416?utm_source=twitterfeed&utm_medium=twitter
+[1] 21825
+root@ima-app:/var/www/Hussam# * About to connect() to www.bbc.com port 80 (#0)
+*   Trying 151.101.32.81... connected
+* Connected to www.bbc.com (151.101.32.81) port 80 (#0)
+> GET /news/business-37047416?utm_source=twitterfeed HTTP/1.1
+> User-Agent: curl/7.21.3 (x86_64-pc-linux-gnu) libcurl/7.21.3 OpenSSL/0.9.8o zlib/1.2.3.4 libidn/1.18
+> Host: www.bbc.com
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Server: Apache
+< X-Cache-Action: MISS
+< X-Cache-Age: 0
+< Content-Type: text/html; charset=utf-8
+< X-News-Data-Centre: cwwtf
+< Content-Language: en
+< X-PAL-Host: pal099.back.live.cwwtf.local:80
+< X-News-Cache-Id: 94852
+< Content-Length: 141821
+< Accept-Ranges: bytes
+< Date: Mon, 06 Feb 2017 22:22:29 GMT
+< Via: 1.1 varnish
+< Age: 0
+< Connection: keep-alive
+< X-LB-NoCache: true
+< X-Fastly-Cache-Status: MISS-CLUSTER
+< Set-Cookie: BBC-UID=cf5725fb665484f03ccf168d3099914bc1d880c0fb75b6f4f58139214b5afd470curl%2F7.21.3%20%28x86_64-pc-linux-gnu%29%20libcurl%2F7.21.3%20OpenSSL%2F0.9.8o%20zlib%2F1.2.3.4%20libidn%2F1.18; expires=Fri, 05 Feb 2021 22:22:29 GMT; path=/; domain=.bbc.com
+< Cache-Control: private, max-age=60, stale-while-revalidate
+< X-Served-By: cache-iad2620-IAD
+< X-Cache: MISS
+< X-Cache-Hits: 0
+< X-Timer: S1486419748.297126,VS0,VE898
+< Vary: Accept-Encoding
+<
+{ [data not shown]
+* Connection #0 to host www.bbc.com left intact
+* Closing connection #0
+
+[1]+  Done                    curl -s -o /dev/null -v http://www.bbc.com/news/business-37047416?utm_source=twitterfeed
+root@ima-app:/var/www/Hussam#
